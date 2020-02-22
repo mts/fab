@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Select /> Snaphot must match defaultRender 1`] = `
+<div
+  className="select"
+>
+  Select under construction
+</div>
+`;

@@ -7,6 +7,7 @@ export const selectDefaultProps = {
 export const selectPropTypes = {
   className: string,
   options: shape({
-    text: string,
-  }),
+    value: string.isRequired,
+    text: string.isRequired,
+  }).isRequired,
 }

@@ -714,5 +714,17 @@ exports[`<FindAnimalBreed /> Snaphot must match findDogBreedRender 1`] = `
       Search Dog
     </button>
   </div>
+  <div
+    className="breedShow"
+  >
+    <div
+      className="image"
+    >
+      <img
+        alt="border collie"
+        src="https://images.dog.ceo/breeds/collie-border/n02106166_1031.jpg"
+      />
+    </div>
+  </div>
 </div>
 `;

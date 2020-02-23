@@ -3,6 +3,7 @@ import {
   isRunningOnLocalHostViaDomain as isRunningOnLocalHostViaDomainDefault,
   isRunningOnGitHubPages as isRunningOnGitHubPagesDefault,
 } from '../environment'
+import { placeholderURL } from '../client/constant'
 
 export function getAppDefaultStateFromWindow() {
   return windowObjectExists ? window.appDefaultState : {}
@@ -17,10 +18,12 @@ export function getAppDefaultStateFromData({ isRunningOnLocalHost, isRunningOnGi
     },
     api: {
       rest: {
-        github: {},
-      },
-      graphql: {
-        github: {},
+        dog: {
+          randomImage: {
+            src: placeholderURL,
+            alt: 'random',
+          },
+        },
       },
     },
     ui: {},

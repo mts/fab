@@ -1,11 +1,13 @@
 import React from 'react'
 import { Provider } from 'react-redux'
-import { Button } from '../Button'
+import { FindDogBreed } from '../FindDogBreed'
 import { getAppMockStore } from '../../../../../../library/src/store/mock'
 import { mockAppState } from '../../../../../../library/src/state/mock'
 
-export const defaultRender = (
-  <Provider store={getAppMockStore(mockAppState)}>
-    <Button text="Find" />
-  </Provider>
-)
+export const defaultRender = (() => {
+  return (
+    <Provider store={getAppMockStore(mockAppState)}>
+      <FindDogBreed />
+    </Provider>
+  )
+})()

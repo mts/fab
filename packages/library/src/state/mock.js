@@ -1,3 +1,5 @@
+import { placeholderURL } from '../client/constant'
+
 export const mockAppState = {
   context: {
     isRunningOnLocalHost: true,
@@ -6,7 +8,12 @@ export const mockAppState = {
   },
   api: {
     rest: {
-      github: {},
+      dog: {
+        randomImage: {
+          src: placeholderURL,
+          alt: 'random',
+        },
+      },
     },
   },
   ui: {},

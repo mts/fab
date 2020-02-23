@@ -1,0 +1,16 @@
+/*!
+ * @project        FAB
+ * @name           app.874b.css
+ * @author         MTS
+ * @build          Sun, Feb 23, 2020 1:02 PM ET
+ * @release        67eacf241d28d8ca3b4790afc863563611268da8 [master]
+ * @copyright      Copyright (c) 2020 FAB
+ *
+ */
+
+@font-face{font-family:Ciutadella;src:url(/fab/fonts/35A006_0_0.woff2) format("woff2"),url(/fab/fonts/35A006_0_0.woff) format("woff");font-weight:300;font-style:normal}@font-face{font-family:Ciutadella;src:url(/fab/fonts/35A006_2_0.woff2) format("woff2"),url(/fab/fonts/35A006_2_0.woff) format("woff");font-weight:400;font-style:normal}@font-face{font-family:Ciutadella;src:url(/fab/fonts/35A006_1_0.woff2) format("woff2"),url(/fab/fonts/35A006_1_0.woff) format("woff");font-weight:500;font-style:normal}@font-face{font-family:Roboto;src:url(/fab/fonts/roboto-v18-latin-300.woff2) format("woff2"),url(/fab/fonts/roboto-v18-latin-300.woff) format("woff");font-weight:300;font-style:normal}@font-face{font-family:Roboto;src:url(/fab/fonts/roboto-v18-latin-regular.woff2) format("woff2"),url(/fab/fonts/roboto-v18-latin-regular.woff) format("woff");font-weight:400;font-style:normal}@font-face{font-family:Roboto;src:url(/fab/fonts/roboto-v18-latin-500.woff2) format("woff2"),url(/fab/fonts/roboto-v18-latin-500.woff) format("woff");font-weight:500;font-style:normal}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}body{background-color:#fff}iframe{border:0;display:block}html{font-size:100%}body{font-weight:300;font-size:18px;font-size:1.125rem}body,button,input,optgroup,textarea{font-family:Roboto}select,span{font-weight:300}p{line-height:32px;line-height:2rem;margin-bottom:16px;margin-bottom:1rem;color:#343434}p a{text-decoration:underline;font-size:inherit}
+
+.HomeTemplate_homeTemplate{background-color:transparent}
+
+
+/*# sourceMappingURL=app.874b.css.map*/

@@ -1,10 +1,21 @@
 import React from 'react'
+import uuidv1 from 'uuid/v1'
 import cx from 'classnames'
 import { selectDefaultProps, selectPropTypes } from './Select.prop'
 import { select } from './Select.scss'
 
-export function Select({ className }) {
-  return <div className={cx(className, select)}>Select under construction</div>
+export function Select({ className, options }) {
+  return (
+    <select className={cx(className, select)}>
+      {options.map(({ value, text }) => {
+        return (
+          <option key={uuidv1()} value={value}>
+            {text}
+          </option>
+        )
+      })}
+    </select>
+  )
 }
 
 Select.defaultProps = selectDefaultProps

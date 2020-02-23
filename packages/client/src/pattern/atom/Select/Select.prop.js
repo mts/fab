@@ -1,4 +1,4 @@
-import { string } from 'prop-types'
+import { string, shape } from 'prop-types'
 
 export const selectDefaultProps = {
   className: '',
@@ -6,4 +6,7 @@ export const selectDefaultProps = {
 
 export const selectPropTypes = {
   className: string,
+  options: shape({
+    text: string,
+  }),
 }

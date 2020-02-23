@@ -1,7 +1,10 @@
 import { storiesOf } from '@storybook/react'
-import { defaultRender } from './Select.int.render'
+import { dogSelectRender, catSelectRender } from './Select.int.render'
 import { getInfo } from '../../../../../../../.storybook/library'
 
-const defaultRenderInfo = getInfo('default')
+const dogSelectRenderInfo = getInfo('dogSelect')
+const catSelectRenderInfo = getInfo('catSelect')
 
-storiesOf('Patttern/Atom/Select', module).add(defaultRenderInfo.text, () => defaultRender, defaultRenderInfo.parameters)
+storiesOf('Patttern/Atom/Select', module)
+  .add(dogSelectRenderInfo.text, () => dogSelectRender, dogSelectRenderInfo.parameters)
+  .add(catSelectRenderInfo.text, () => catSelectRender, catSelectRenderInfo.parameters)

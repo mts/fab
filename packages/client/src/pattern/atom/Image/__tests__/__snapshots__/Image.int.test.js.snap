@@ -1,11 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Image /> Snaphot must match defaultRender 1`] = `
+exports[`<Image /> Snaphot must match catImageRender 1`] = `
 <div
   className="image"
 >
   <img
-    alt="border collie"
+    alt="cute cat"
+    src="https://66.media.tumblr.com/tumblr_m4iejdP8Hb1qd477zo1_250.jpg"
+  />
+</div>
+`;
+
+exports[`<Image /> Snaphot must match dogImageRender 1`] = `
+<div
+  className="image"
+>
+  <img
+    alt="cute dog"
     src="https://images.dog.ceo/breeds/collie-border/n02106166_1031.jpg"
   />
 </div>

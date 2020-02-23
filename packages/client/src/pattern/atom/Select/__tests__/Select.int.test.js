@@ -1,9 +1,13 @@
-import { defaultRender } from './Select.int.render'
+import { dogSelectRender, catSelectRender } from './Select.int.render'
 
 describe('<Select />', () => {
   describe('Snaphot', () => {
-    test('must match defaultRender', () => {
-      expect(global.renderToJSON(defaultRender)).toMatchSnapshot()
+    test('must match dogSelectRender', () => {
+      expect(global.renderToJSON(dogSelectRender)).toMatchSnapshot()
+    })
+
+    test('must match catSelectRender', () => {
+      expect(global.renderToJSON(catSelectRender)).toMatchSnapshot()
     })
   })
 })

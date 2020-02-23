@@ -1,7 +1,11 @@
 import { storiesOf } from '@storybook/react'
-import { defaultRender } from './FindAnimalBreed.int.render'
+import { findDogBreedRender } from './FindAnimalBreed.int.render'
 import { getInfo } from '../../../../../../../.storybook/library'
 
-const defaultRenderInfo = getInfo('default')
+const findDogBreedRenderInfo = getInfo('default')
 
-storiesOf('Patttern/Molecule/FindAnimalBreed', module).add(defaultRenderInfo.text, () => defaultRender, defaultRenderInfo.parameters)
+storiesOf('Patttern/Molecule/FindAnimalBreed', module).add(
+  findDogBreedRenderInfo.text,
+  () => findDogBreedRender,
+  findDogBreedRenderInfo.parameters,
+)

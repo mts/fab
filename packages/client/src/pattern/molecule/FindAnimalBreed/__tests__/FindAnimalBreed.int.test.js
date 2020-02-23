@@ -1,9 +1,9 @@
-import { defaultRender } from './FindAnimalBreed.int.render'
+import { findDogBreedRender } from './FindAnimalBreed.int.render'
 
 describe('<FindAnimalBreed />', () => {
   describe('Snaphot', () => {
-    test('must match defaultRender', () => {
-      expect(global.renderToJSON(defaultRender)).toMatchSnapshot()
+    test('must match findDogBreedRender', () => {
+      expect(global.renderToJSON(findDogBreedRender)).toMatchSnapshot()
     })
   })
 })

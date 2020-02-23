@@ -1,8 +1,14 @@
 import { apiRestDogSetRandomImageAction } from '../action/actionCreators'
 import { getRandomDogImageByBreed } from '../../api/rest/dog/image'
-import { dogSelectOptions } from '../../pattern/atom/Select/__tests__/Select.int.render'
 
-export const setAppCompleteStateThunk = () => async dispatch => {
-  const restResponseData = await getRandomDogImageByBreed(dogSelectOptions[0].value)
-  dispatch(apiRestDogSetRandomImageAction(restResponseData))
+export const setAppCompleteStateThunk = (breed = 'collie') => async dispatch => {
+  const restResponseData = await getRandomDogImageByBreed(breed)
+  if (restResponseData.code !== 404) {
+    dispatch(
+      apiRestDogSetRandomImageAction({
+        message: restResponseData.message,
+        breed,
+      }),
+    )
+  }
 }

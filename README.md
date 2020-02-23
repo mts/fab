@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="250px" height="250px" src=".docs/image/logo.jpg">
+  <img width="500px" height="250px" src=".docs/image/logo.jpg">
 </p>
 
 <h1 align="center">FAB</h1>
@@ -33,10 +33,6 @@
     <img src="https://img.shields.io/github/license/mts/fab.svg" alt="">
   </a>
 </p>
-
-<h2 style="color: #006400;">🗿 Status</h2>
-
-<blockquote style="margin: 0; padding: 0 24px; color: olive; font-weight: 600; font-size:1em">🐝 This project is a work in progress and is not ready for production use yet!</blockquote>
 
 <h2 style="color: #006400;">🗿 Introduction</h2>
 

@@ -20,699 +20,840 @@ exports[`<HomePage /> Snaphot must match defaultRender 1`] = `
         >
           <select
             className="breedSearchSelect select"
+            onBlur={[Function]}
+            onChange={[Function]}
           >
             <option
+              selected={false}
               value="affenpinscher"
             >
               affenpinscher
             </option>
             <option
+              selected={false}
               value="african"
             >
               african
             </option>
             <option
+              selected={false}
               value="airedale"
             >
               airedale
             </option>
             <option
+              selected={false}
               value="akita"
             >
               akita
             </option>
             <option
+              selected={false}
               value="appenzeller"
             >
               appenzeller
             </option>
             <option
-              value="shepherd-australian"
+              selected={false}
+              value="australian-shepherd"
             >
               shepherd australian
             </option>
             <option
+              selected={false}
               value="basenji"
             >
               basenji
             </option>
             <option
+              selected={false}
               value="beagle"
             >
               beagle
             </option>
             <option
+              selected={false}
               value="bluetick"
             >
               bluetick
             </option>
             <option
+              selected={false}
               value="borzoi"
             >
               borzoi
             </option>
             <option
+              selected={false}
               value="bouvier"
             >
               bouvier
             </option>
             <option
+              selected={false}
               value="boxer"
             >
               boxer
             </option>
             <option
+              selected={false}
               value="brabancon"
             >
               brabancon
             </option>
             <option
+              selected={false}
               value="briard"
             >
               briard
             </option>
             <option
-              value="norwegian-buhund"
+              selected={false}
+              value="buhund-norwegian"
             >
               norwegian buhund
             </option>
             <option
-              value="boston-bulldog"
+              selected={false}
+              value="bulldog-boston"
             >
               boston bulldog
             </option>
             <option
-              value="english-bulldog"
+              selected={false}
+              value="bulldog-english"
             >
               english bulldog
             </option>
             <option
-              value="french-bulldog"
+              selected={false}
+              value="bulldog-french"
             >
               french bulldog
             </option>
             <option
-              value="staffordshire-bullterrier"
+              selected={false}
+              value="bullterrier-staffordshire"
             >
               staffordshire bullterrier
             </option>
             <option
+              selected={false}
               value="cairn"
             >
               cairn
             </option>
             <option
-              value="australian-cattledog"
+              selected={false}
+              value="cattledog-australian"
             >
               australian cattledog
             </option>
             <option
+              selected={false}
               value="chihuahua"
             >
               chihuahua
             </option>
             <option
+              selected={false}
               value="chow"
             >
               chow
             </option>
             <option
+              selected={false}
               value="clumber"
             >
               clumber
             </option>
             <option
+              selected={false}
               value="cockapoo"
             >
               cockapoo
             </option>
             <option
-              value="border-collie"
+              selected={false}
+              value="collie-border"
             >
               border collie
             </option>
             <option
+              selected={false}
               value="coonhound"
             >
               coonhound
             </option>
             <option
-              value="cardigan-corgi"
+              selected={false}
+              value="corgi-cardigan"
             >
               cardigan corgi
             </option>
             <option
+              selected={false}
               value="cotondetulear"
             >
               cotondetulear
             </option>
             <option
+              selected={false}
               value="dachshund"
             >
               dachshund
             </option>
             <option
+              selected={false}
               value="dalmatian"
             >
               dalmatian
             </option>
             <option
-              value="great-dane"
+              selected={false}
+              value="dane-great"
             >
               great dane
             </option>
             <option
-              value="scottish-deerhound"
+              selected={false}
+              value="deerhound-scottish"
             >
               scottish deerhound
             </option>
             <option
+              selected={false}
               value="dhole"
             >
               dhole
             </option>
             <option
+              selected={false}
               value="dingo"
             >
               dingo
             </option>
             <option
+              selected={false}
               value="doberman"
             >
               doberman
             </option>
             <option
-              value="norwegian-elkhound"
+              selected={false}
+              value="elkhound-norwegian"
             >
               norwegian elkhound
             </option>
             <option
+              selected={false}
               value="entlebucher"
             >
               entlebucher
             </option>
             <option
+              selected={false}
               value="eskimo"
             >
               eskimo
             </option>
             <option
-              value="bichon-frise"
+              selected={false}
+              value="frise-bichon"
             >
               bichon frise
             </option>
             <option
+              selected={false}
               value="germanshepherd"
             >
               germanshepherd
             </option>
             <option
-              value="italian-greyhound"
+              selected={false}
+              value="greyhound-italian"
             >
               italian greyhound
             </option>
             <option
+              selected={false}
               value="groenendael"
             >
               groenendael
             </option>
             <option
+              selected={false}
               value="havanese"
             >
               havanese
             </option>
             <option
-              value="afghan-hound"
+              selected={false}
+              value="hound-afghan"
             >
               afghan hound
             </option>
             <option
-              value="basset-hound"
+              selected={false}
+              value="hound-basset"
             >
               basset hound
             </option>
             <option
-              value="blood-hound"
+              selected={false}
+              value="hound-blood"
             >
               blood hound
             </option>
             <option
-              value="english hound"
+              selected={false}
+              value="hound-english"
             >
               english hound
             </option>
             <option
-              value="ibizan-hound"
+              selected={false}
+              value="hound-ibizan"
             >
               ibizan hound
             </option>
             <option
-              value="plott-hound"
+              selected={false}
+              value="hound-plott"
             >
               plott hound
             </option>
             <option
-              value="walker-hound"
+              selected={false}
+              value="hound-walker"
             >
               walker hound
             </option>
             <option
+              selected={false}
               value="husky"
             >
               husky
             </option>
             <option
+              selected={false}
               value="keeshond"
             >
               keeshond
             </option>
             <option
+              selected={false}
               value="kelpie"
             >
               kelpie
             </option>
             <option
+              selected={false}
               value="komondor"
             >
               komondor
             </option>
             <option
+              selected={false}
               value="kuvasz"
             >
               kuvasz
             </option>
             <option
+              selected={false}
               value="labrador"
             >
               labrador
             </option>
             <option
+              selected={false}
               value="leonberg"
             >
               leonberg
             </option>
             <option
+              selected={false}
               value="lhasa"
             >
               lhasa
             </option>
             <option
+              selected={false}
               value="malamute"
             >
               malamute
             </option>
             <option
+              selected={false}
               value="malinois"
             >
               malinois
             </option>
             <option
+              selected={false}
               value="maltese"
             >
               maltese
             </option>
             <option
-              value="bull-mastiff"
+              selected={false}
+              value="mastiff-bull"
             >
               bull mastiff
             </option>
             <option
-              value="english-mastiff"
+              selected={false}
+              value="mastiff-english"
             >
               english mastiff
             </option>
             <option
-              value="tibetan-mastiff"
+              selected={false}
+              value="mastiff-tibetan"
             >
               tibetan mastiff
             </option>
             <option
+              selected={false}
               value="mexicanhairless"
             >
               mexicanhairless
             </option>
             <option
+              selected={false}
               value="mix"
             >
               mix
             </option>
             <option
-              value="bernese-mountain"
+              selected={false}
+              value="mountain-bernese"
             >
               bernese mountain
             </option>
             <option
-              value="swiss-mountain"
+              selected={false}
+              value="mountain-swiss"
             >
               swiss mountain
             </option>
             <option
+              selected={false}
               value="newfoundland"
             >
               newfoundland
             </option>
             <option
+              selected={false}
               value="otterhound"
             >
               otterhound
             </option>
             <option
+              selected={false}
               value="papillon"
             >
               papillon
             </option>
             <option
+              selected={false}
               value="pekinese"
             >
               pekinese
             </option>
             <option
+              selected={false}
               value="pembroke"
             >
               pembroke
             </option>
             <option
-              value="miniature-pinscher"
+              selected={false}
+              value="pinscher-miniature"
             >
               miniature pinscher
             </option>
             <option
+              selected={false}
               value="pitbull"
             >
               pitbull
             </option>
             <option
-              value="german-pointer"
+              selected={false}
+              value="pointer-german"
             >
               german pointer
             </option>
             <option
-              value="germanlonghair-pointer"
+              selected={false}
+              value="pointer-germanlonghair"
             >
               germanlonghair pointer
             </option>
             <option
+              selected={false}
               value="pomeranian"
             >
               pomeranian
             </option>
             <option
-              value="miniature-poodle"
+              selected={false}
+              value="poodle-miniature"
             >
               miniature poodle
             </option>
             <option
-              value="standard-poodle"
+              selected={false}
+              value="poodle-standard"
             >
               standard poodle
             </option>
             <option
-              value="toy-poodle"
+              selected={false}
+              value="poodle-toy"
             >
               toy poodle
             </option>
             <option
+              selected={false}
               value="pug"
             >
               pug
             </option>
             <option
+              selected={false}
               value="puggle"
             >
               puggle
             </option>
             <option
+              selected={false}
               value="pyrenees"
             >
               pyrenees
             </option>
             <option
+              selected={false}
               value="redbone"
             >
               redbone
             </option>
             <option
-              value="chesapeake-retriever"
+              selected={false}
+              value="retriever-chesapeake"
             >
               chesapeake retriever
             </option>
             <option
-              value="curly-retriever"
+              selected={false}
+              value="retriever-curly"
             >
               curly retriever
             </option>
             <option
-              value="flatcoated-retriever"
+              selected={false}
+              value="retriever-flatcoated"
             >
               flatcoated retriever
             </option>
             <option
-              value="golden-retriever"
+              selected={false}
+              value="retriever-golden"
             >
               golden retriever
             </option>
             <option
-              value="rhodesian-ridgeback"
+              selected={false}
+              value="ridgeback-rhodesian"
             >
               rhodesian ridgeback
             </option>
             <option
+              selected={false}
               value="rottweiler"
             >
               rottweiler
             </option>
             <option
+              selected={false}
               value="saluki"
             >
               saluki
             </option>
             <option
+              selected={false}
               value="samoyed"
             >
               samoyed
             </option>
             <option
+              selected={false}
               value="schipperke"
             >
               schipperke
             </option>
             <option
-              value="giant-schnauzer"
+              selected={false}
+              value="schnauzer-giant"
             >
               giant schnauzer
             </option>
             <option
-              value="miniature-schnauzer"
+              selected={false}
+              value="schnauzer-miniature"
             >
               miniature schnauzer
             </option>
             <option
-              value="english-setter"
+              selected={false}
+              value="setter-english"
             >
               english setter
             </option>
             <option
-              value="gordon-setter"
+              selected={false}
+              value="setter-gordon"
             >
               gordon setter
             </option>
             <option
-              value="irish-setter"
+              selected={false}
+              value="setter-irish"
             >
               irish setter
             </option>
             <option
-              value="english-sheepdog"
+              selected={false}
+              value="sheepdog-english"
             >
               english sheepdog
             </option>
             <option
-              value="shetland-sheepdog"
+              selected={false}
+              value="sheepdog-shetland"
             >
               shetland sheepdog
             </option>
             <option
+              selected={false}
               value="shiba"
             >
               shiba
             </option>
             <option
+              selected={false}
               value="shihtzu"
             >
               shihtzu
             </option>
             <option
-              value="blenheim-spaniel"
+              selected={false}
+              value="spaniel-blenheim"
             >
               blenheim spaniel
             </option>
             <option
-              value="brittany-spaniel"
+              selected={false}
+              value="spaniel-brittany"
             >
               brittany spaniel
             </option>
             <option
-              value="cocker-spaniel"
+              selected={false}
+              value="spaniel-cocker"
             >
               cocker spaniel
             </option>
             <option
-              value="irish-spaniel"
+              selected={false}
+              value="spaniel-irish"
             >
               irish spaniel
             </option>
             <option
-              value="japanese-spaniel"
+              selected={false}
+              value="spaniel-japanese"
             >
               japanese spaniel
             </option>
             <option
-              value="sussex-spaniel"
+              selected={false}
+              value="spaniel-sussex"
             >
               sussex spaniel
             </option>
             <option
-              value="welsh-spaniel"
+              selected={false}
+              value="spaniel-welsh"
             >
               welsh spaniel
             </option>
             <option
-              value="english-springer"
+              selected={false}
+              value="springer-english"
             >
               english springer
             </option>
             <option
+              selected={false}
               value="stbernard"
             >
               stbernard
             </option>
             <option
-              value="american-terrier"
+              selected={false}
+              value="terrier-american"
             >
               american terrier
             </option>
             <option
-              value="australian-terrier"
+              selected={false}
+              value="terrier-australian"
             >
               australian terrier
             </option>
             <option
-              value="bedlington-terrier"
+              selected={false}
+              value="terrier-bedlington"
             >
               bedlington terrier
             </option>
             <option
-              value="border-terrier"
+              selected={false}
+              value="terrier-border"
             >
               border terrier
             </option>
             <option
-              value="dandie-terrier"
+              selected={false}
+              value="terrier-dandie"
             >
               dandie terrier
             </option>
             <option
-              value="fox-terrier"
+              selected={false}
+              value="terrier-fox"
             >
               fox terrier
             </option>
             <option
-              value="irish-terrier"
+              selected={false}
+              value="terrier-irish"
             >
               irish terrier
             </option>
             <option
-              value="kerryblue-terrier"
+              selected={false}
+              value="terrier-kerryblue"
             >
               kerryblue terrier
             </option>
             <option
-              value="lakeland-terrier"
+              selected={false}
+              value="terrier-lakeland"
             >
               lakeland terrier
             </option>
             <option
-              value="norfolk-terrier"
+              selected={false}
+              value="terrier-norfolk"
             >
               norfolk terrier
             </option>
             <option
-              value="norwich-terrier"
+              selected={false}
+              value="terrier-norwich"
             >
               norwich terrier
             </option>
             <option
-              value="patterdale-terrier"
+              selected={false}
+              value="terrier-patterdale"
             >
               patterdale terrier
             </option>
             <option
-              value="russell-terrier"
+              selected={false}
+              value="terrier-russell"
             >
               russell terrier
             </option>
             <option
-              value="scottish-terrier"
+              selected={false}
+              value="terrier-scottish"
             >
               scottish terrier
             </option>
             <option
-              value="sealyham-terrier"
+              selected={false}
+              value="terrier-sealyham"
             >
               sealyham terrier
             </option>
             <option
-              value="silky-terrier"
+              selected={false}
+              value="terrier-silky"
             >
               silky terrier
             </option>
             <option
-              value="tibetan-terrier"
+              selected={false}
+              value="terrier-tibetan"
             >
               tibetan terrier
             </option>
             <option
-              value="toy-terrier"
+              selected={false}
+              value="terrier-toy"
             >
               toy terrier
             </option>
             <option
-              value="westhighland-terrier"
+              selected={false}
+              value="terrier-westhighland"
             >
               westhighland terrier
             </option>
             <option
-              value="wheaten-terrier"
+              selected={false}
+              value="terrier-wheaten"
             >
               wheaten terrier
             </option>
             <option
-              value="yorkshire-terrier"
+              selected={false}
+              value="terrier-yorkshire"
             >
               yorkshire terrier
             </option>
             <option
+              selected={false}
               value="vizsla"
             >
               vizsla
             </option>
             <option
-              value="spanish-waterdog"
+              selected={false}
+              value="waterdog-spanish"
             >
               spanish waterdog
             </option>
             <option
+              selected={false}
               value="weimaraner"
             >
               weimaraner
             </option>
             <option
+              selected={false}
               value="whippet"
             >
               whippet
             </option>
             <option
-              value="irish-wolfhound"
+              selected={false}
+              value="wolfhound-irish"
             >
               irish wolfhound
             </option>

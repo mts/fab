@@ -4,7 +4,11 @@ import { buttonDefaultProps, buttonPropTypes } from './Button.prop'
 import { button } from './Button.scss'
 
 export function Button({ className }) {
-  return <div className={cx(className, button)}>Button under construction</div>
+  return (
+    <button type="button" className={cx(className, button)}>
+      Fetch!
+    </button>
+  )
 }
 
 Button.defaultProps = buttonDefaultProps

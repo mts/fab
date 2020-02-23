@@ -1,9 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Button /> Snaphot must match defaultRender 1`] = `
-<div
+<button
   className="button"
+  type="button"
 >
-  Button under construction
-</div>
+  Fetch!
+</button>
 `;

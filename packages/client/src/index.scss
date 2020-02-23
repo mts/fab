@@ -64,4 +64,49 @@ button,
 select {
   text-transform: none;
 }
+
+//
+
+body {
+  background-color: #fff;
+}
+
+iframe {
+  border: 0;
+  display: block;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+
+body,
+button,
+input,
+optgroup,
+textarea {
+  font-family: Roboto;
+}
+
+select,
+span {
+  font-weight: 300;
+}
+
+p {
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  color: #343434;
+}
+
+p a {
+  text-decoration: underline;
+  font-size: inherit;
+}
+
 /* stylelint-enable */

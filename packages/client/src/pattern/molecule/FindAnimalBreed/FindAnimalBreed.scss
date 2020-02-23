@@ -1,5 +1,6 @@
 .breed {
   background-color: transparent;
+  padding: 2rem;
 
   &Search {
     height: auto;
@@ -20,5 +21,22 @@
     &Button {
       flex: 1 1 0;
     }
+  }
+
+  &Show {
+    @media (max-width: 767px) {
+      max-height: 300px;
+    }
+
+    @media (max-width: 1024px) {
+      padding: 1rem 0;
+      max-height: 400px;
+    }
+
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    max-height: 500px;
+    position: relative;
   }
 }

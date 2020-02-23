@@ -3,10 +3,10 @@ import cx from 'classnames'
 import { buttonDefaultProps, buttonPropTypes } from './Button.prop'
 import { button } from './Button.scss'
 
-export function Button({ className }) {
+export function Button({ className, text, onClick }) {
   return (
-    <button type="button" className={cx(className, button)}>
-      Fetch!
+    <button onClick={onClick} type="button" className={cx(className, button)}>
+      {text}
     </button>
   )
 }

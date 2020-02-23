@@ -3,6 +3,7 @@ import {
   isRunningOnLocalHostViaDomain as isRunningOnLocalHostViaDomainDefault,
   isRunningOnGitHubPages as isRunningOnGitHubPagesDefault,
 } from '../environment'
+import { placeholderURL } from '../client/constant'
 
 export function getAppDefaultStateFromWindow() {
   return windowObjectExists ? window.appDefaultState : {}
@@ -19,7 +20,7 @@ export function getAppDefaultStateFromData({ isRunningOnLocalHost, isRunningOnGi
       rest: {
         dog: {
           randomImage: {
-            src: 'https://via.placeholder.com/300',
+            src: placeholderURL,
             alt: 'random',
           },
         },

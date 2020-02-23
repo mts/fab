@@ -5,6 +5,7 @@ import * as actionCreators from '../../../store/action/actionCreators'
 import { findDogBreedDefaultProps, findDogBreedPropTypes } from './FindDogBreed.prop'
 import { FindAnimalBreed } from '../../molecule/FindAnimalBreed'
 import { dogSelectOptions } from '../../atom/Select/__tests__/Select.int.render'
+import { breedEntry } from '../../../../../library/src/client/constant'
 
 export function Component({ className, randomImage, apiRestDogSetRandomImageAction }) {
   function selectOnChange(selectedValue) {
@@ -16,6 +17,7 @@ export function Component({ className, randomImage, apiRestDogSetRandomImageActi
   return (
     <div className={className}>
       <FindAnimalBreed
+        searchEntry={breedEntry.input}
         selectOptions={dogSelectOptions}
         selectOnchange={selectOnChange}
         buttonText="Search Dog"

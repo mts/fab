@@ -1,4 +1,5 @@
 import { getAppDefaultStateFromData } from '../default'
+import { placeholderURL } from '../../client/constant'
 
 jest.mock('../../environment', () => ({
   isRunningOnLocalHostViaPort: false,
@@ -54,7 +55,7 @@ describe('default', () => {
         rest: {
           dog: {
             randomImage: {
-              src: 'https://via.placeholder.com/300',
+              src: placeholderURL,
               alt: 'random',
             },
           },

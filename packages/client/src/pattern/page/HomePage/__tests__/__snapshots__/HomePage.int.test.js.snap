@@ -9,7 +9,41 @@ exports[`<HomePage /> Snaphot must match defaultRender 1`] = `
   <div
     className="homeTemplate"
   >
-    HomeTemplate under construction
+    <div
+      className=""
+    >
+      <div
+        className="breed"
+      >
+        <div
+          className="breedSearch"
+        >
+          <input
+            className="breedSearchInput input"
+            onKeyUp={[Function]}
+          />
+          <button
+            className="breedSearchButton button"
+            onClick={[Function]}
+            type="button"
+          >
+            Search Dog
+          </button>
+        </div>
+        <div
+          className="breedShow"
+        >
+          <div
+            className="image"
+          >
+            <img
+              alt="random"
+              src="https://via.placeholder.com/300"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;

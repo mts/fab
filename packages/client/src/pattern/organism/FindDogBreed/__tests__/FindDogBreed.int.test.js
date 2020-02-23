@@ -1,8 +1,8 @@
-import { defaultRender } from './Button.int.render'
+import { defaultRender } from './FindDogBreed.int.render'
 
 jest.mock('../../../../store/thunk/completeState', () => ({ setAppCompleteStateThunk: () => {} }))
 
-describe('<Button />', () => {
+describe('<FindDogBreed />', () => {
   describe('Snaphot', () => {
     test('must match defaultRender', () => {
       expect(global.renderToJSON(defaultRender)).toMatchSnapshot()

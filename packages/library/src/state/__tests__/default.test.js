@@ -1,4 +1,5 @@
 import { getAppDefaultStateFromData } from '../default'
+import { placeholderURL } from '../../client/constant'
 
 jest.mock('../../environment', () => ({
   isRunningOnLocalHostViaPort: false,
@@ -52,10 +53,12 @@ describe('default', () => {
 
       expect(defaultState.api).toMatchObject({
         rest: {
-          github: {},
-        },
-        graphql: {
-          github: {},
+          dog: {
+            randomImage: {
+              src: placeholderURL,
+              alt: 'random',
+            },
+          },
         },
       })
     })

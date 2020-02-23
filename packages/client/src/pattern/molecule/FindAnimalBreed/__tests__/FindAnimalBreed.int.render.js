@@ -1,25 +1,19 @@
 import React from 'react'
+import { Provider } from 'react-redux'
 import { FindAnimalBreed } from '../FindAnimalBreed'
 import { dogSelectOptions, catSelectOptions } from '../../../atom/Select/__tests__/Select.int.render'
 import { dogImageSource, catImageSource } from '../../../atom/Image/__tests__/Image.int.render'
-
-const searchDogButtonOnClick = () => {}
-const searchCatButtonOnClick = () => {}
+import { getAppMockStore } from '../../../../../../library/src/store/mock'
+import { mockAppState } from '../../../../../../library/src/state/mock'
 
 export const findDogBreedRender = (
-  <FindAnimalBreed
-    selectOptions={dogSelectOptions}
-    buttonText="Search Dog"
-    buttonOnClick={searchDogButtonOnClick}
-    imageSource={dogImageSource}
-  />
+  <Provider store={getAppMockStore(mockAppState)}>
+    <FindAnimalBreed selectOptions={dogSelectOptions} buttonText="Search Dog" imageSource={dogImageSource} />
+  </Provider>
 )
 
 export const findCatBreedRender = (
-  <FindAnimalBreed
-    selectOptions={catSelectOptions}
-    buttonText="Search Cat"
-    buttonOnClick={searchCatButtonOnClick}
-    imageSource={catImageSource}
-  />
+  <Provider store={getAppMockStore(mockAppState)}>
+    <FindAnimalBreed selectOptions={catSelectOptions} buttonText="Search Cat" imageSource={catImageSource} />
+  </Provider>
 )

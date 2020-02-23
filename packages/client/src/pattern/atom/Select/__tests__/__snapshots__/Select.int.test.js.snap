@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Select /> Snaphot must match defaultRender 1`] = `
+exports[`<Select /> Snaphot must match dogSelectRender 1`] = `
 <select
   className="select"
 >

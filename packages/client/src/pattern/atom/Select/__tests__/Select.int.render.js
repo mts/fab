@@ -1,7 +1,7 @@
 import React from 'react'
 import { Select } from '../Select'
 
-const options = [
+export const dogSelectOptions = [
   { value: 'affenpinscher', text: 'affenpinscher' },
   { value: 'african', text: 'african' },
   { value: 'airedale', text: 'airedale' },
@@ -143,4 +143,4 @@ const options = [
   { value: 'irish-wolfhound', text: 'irish wolfhound' },
 ]
 
-export const defaultRender = <Select options={options} />
+export const dogSelectRender = <Select options={dogSelectOptions} />

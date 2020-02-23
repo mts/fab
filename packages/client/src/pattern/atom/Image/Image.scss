@@ -1,5 +1,14 @@
 .image {
   img {
+    @media (max-width: 767px) {
+      max-height: calc(300px - 2rem);
+    }
+
+    @media (max-width: 1024px) {
+      max-width: 100%;
+      max-height: calc(400px - 2rem);
+    }
+
     position: absolute;
     left: 0;
     right: 0;

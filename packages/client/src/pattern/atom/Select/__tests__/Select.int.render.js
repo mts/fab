@@ -1,7 +1,7 @@
 import React from 'react'
 import { Select } from '../Select'
 
-const options = [
+export const dogSelectOptions = [
   { value: 'affenpinscher', text: 'affenpinscher' },
   { value: 'african', text: 'african' },
   { value: 'airedale', text: 'airedale' },
@@ -143,4 +143,68 @@ const options = [
   { value: 'irish-wolfhound', text: 'irish wolfhound' },
 ]
 
-export const defaultRender = <Select options={options} />
+export const catSelectOptions = [
+  { value: 'Abyssinian', text: 'Abyssinian' },
+  { value: 'Aegean', text: 'Aegean' },
+  { value: 'American-Bobtail', text: 'American Bobtail' },
+  { value: 'American-Curl', text: 'American Curl' },
+  { value: 'American-Shorthair', text: 'American Shorthair' },
+  { value: 'American-Wirehair', text: 'American Wirehair' },
+  { value: 'Arabian-Mau', text: 'Arabian Mau' },
+  { value: 'Australian-Mist', text: 'Australian Mist' },
+  { value: 'Balinese', text: 'Balinese' },
+  { value: 'Bambino', text: 'Bambino' },
+  { value: 'Bengal', text: 'Bengal' },
+  { value: 'Birman', text: 'Birman' },
+  { value: 'Bombay', text: 'Bombay' },
+  { value: 'British-Longhair', text: 'British Longhair' },
+  { value: 'British-Shorthair', text: 'British Shorthair' },
+  { value: 'Burmese', text: 'Burmese' },
+  { value: 'Burmilla', text: 'Burmilla' },
+  { value: 'California-Spangled', text: 'California Spangled' },
+  { value: 'Chantilly-Tiffany', text: 'Chantilly-Tiffany' },
+  { value: 'Chartreux', text: 'Chartreux' },
+  { value: 'Chausie', text: 'Chausie' },
+  { value: 'Cheetoh', text: 'Cheetoh' },
+  { value: 'Colorpoint-Shorthair', text: 'Colorpoint Shorthair' },
+  { value: 'Cornish-Rex', text: 'Cornish Rex' },
+  { value: 'Cymric', text: 'Cymric' },
+  { value: 'Cyprus', text: 'Cyprus' },
+  { value: 'Devon-Rex', text: 'Devon Rex' },
+  { value: 'Donskoy', text: 'Donskoy' },
+  { value: 'Dragon-Li', text: 'Dragon Li' },
+  { value: 'Egyptian-Mau', text: 'Egyptian Mau' },
+  { value: 'European-Burmese', text: 'European Burmese' },
+  { value: 'Exotic-Shorthair', text: 'Exotic Shorthair' },
+  { value: 'Havana-Brown', text: 'Havana Brown' },
+  { value: 'Himalayan', text: 'Himalayan' },
+  { value: 'Japanese-Bobtail', text: 'Japanese Bobtail' },
+  { value: 'Javanese', text: 'Javanese' },
+  { value: 'Khao-Manee', text: 'Khao Manee' },
+  { value: 'Korat', text: 'Korat' },
+  { value: 'Kurilian', text: 'Kurilian' },
+  { value: 'LaPerm', text: 'LaPerm' },
+  { value: 'Maine-Coon', text: 'Maine Coon' },
+  { value: 'Malayan', text: 'Malayan' },
+  { value: 'Manx', text: 'Manx' },
+  { value: 'Munchkin', text: 'Munchkin' },
+  { value: 'Nebelung', text: 'Nebelung' },
+  { value: 'Norwegian-Forest Cat', text: 'Norwegian Forest Cat' },
+  { value: 'Ocicat', text: 'Ocicat' },
+  { value: 'Oriental', text: 'Oriental' },
+  { value: 'Persian', text: 'Persian' },
+  { value: 'Pixie-bob', text: 'Pixie-bob' },
+  { value: 'Ragamuffin', text: 'Ragamuffin' },
+  { value: 'Ragdoll', text: 'Ragdoll' },
+  { value: 'Russian-Blue', text: 'Russian Blue' },
+  { value: 'Savannah', text: 'Savannah' },
+  { value: 'Scottish-Fold', text: 'Scottish Fold' },
+  { value: 'Selkirk-Rex', text: 'Selkirk Rex' },
+  { value: 'Siamese', text: 'Siamese' },
+  { value: 'Siberian', text: 'Siberian' },
+  { value: 'Singapura', text: 'Singapura' },
+  { value: 'Snowshoe', text: 'Snowshoe' },
+]
+
+export const dogSelectRender = <Select options={dogSelectOptions} />
+export const catSelectRender = <Select options={catSelectOptions} />

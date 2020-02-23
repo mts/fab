@@ -11,6 +11,5 @@ export const findAnimalBreedPropTypes = {
   className: string,
   selectOptions: selectPropTypes.options,
   buttonText: buttonPropTypes.text,
-  buttonOnClick: buttonPropTypes.onClick,
   imageSource: imagePropTypes.source,
 }

@@ -1,5 +1,7 @@
 import { findDogBreedRender, findCatBreedRender } from './FindAnimalBreed.int.render'
 
+jest.mock('../../../../store/thunk/completeState', () => ({ setAppCompleteStateThunk: () => {} }))
+
 describe('<FindAnimalBreed />', () => {
   describe('Snaphot', () => {
     test('must match findDogBreedRender', () => {

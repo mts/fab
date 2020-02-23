@@ -6,12 +6,12 @@ import { Select } from '../../atom/Select'
 import { Button } from '../../atom/Button'
 import { Image } from '../../atom/Image'
 
-export function FindAnimalBreed({ className, selectOptions, buttonText, buttonOnClick, imageSource }) {
+export function FindAnimalBreed({ className, selectOptions, buttonText, imageSource }) {
   return (
     <div className={cx(className, breed)}>
       <div className={breedSearch}>
         <Select className={breedSearchSelect} options={selectOptions} />
-        <Button className={breedSearchButton} text={buttonText} onClick={buttonOnClick} />
+        <Button className={breedSearchButton} text={buttonText} />
       </div>
       <div className={breedShow}>
         <Image source={imageSource} />

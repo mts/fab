@@ -21,6 +21,8 @@ export const getAppReducer = () =>
                 randomImage: {
                   ...state.rest.dog.randomImage,
                   src: action.payload.message,
+                  breed: action.payload.breed,
+                  subBreed: action.payload.message.replace('https://images.dog.ceo/breeds/', '').split('/')[0],
                 },
               },
             },

@@ -4,7 +4,7 @@ import { inputDefaultProps, inputPropTypes } from './Input.prop'
 import { input } from './Input.scss'
 
 export function Input({ className }) {
-  return <div className={cx(className, input)}>Input under construction</div>
+  return <input className={cx(className, input)} />
 }
 
 Input.defaultProps = inputDefaultProps

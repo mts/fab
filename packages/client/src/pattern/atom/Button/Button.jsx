@@ -5,7 +5,7 @@ import { button } from './Button.scss'
 
 export function Button({ className, text, onClick }) {
   return (
-    <button onClick={onClick} type="button" className={cx(className, button)}>
+    <button className={cx(className, button)} onClick={onClick} type="button">
       {text}
     </button>
   )

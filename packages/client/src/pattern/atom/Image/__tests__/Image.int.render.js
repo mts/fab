@@ -1,8 +1,9 @@
 import React from 'react'
 import { Image } from '../Image'
 
-const source = {
+export const imageSource = {
   src: 'https://images.dog.ceo/breeds/collie-border/n02106166_1031.jpg',
   alt: 'border collie',
 }
-export const defaultRender = <Image source={source} />
+
+export const defaultRender = <Image source={imageSource} />

@@ -3,8 +3,14 @@ import cx from 'classnames'
 import { imageDefaultProps, imagePropTypes } from './Image.prop'
 import { image } from './Image.scss'
 
-export function Image({ className }) {
-  return <div className={cx(className, image)}>Image under construction</div>
+export function Image({ className, source }) {
+  const { src, alt } = source
+
+  return (
+    <div className={cx(className, image)}>
+      <img src={src} alt={alt} />
+    </div>
+  )
 }
 
 Image.defaultProps = imageDefaultProps

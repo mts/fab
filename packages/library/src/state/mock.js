@@ -6,7 +6,12 @@ export const mockAppState = {
   },
   api: {
     rest: {
-      github: {},
+      dog: {
+        randomImage: {
+          src: 'https://via.placeholder.com/300',
+          alt: 'random',
+        },
+      },
     },
   },
   ui: {},

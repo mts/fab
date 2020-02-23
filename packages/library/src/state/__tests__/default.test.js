@@ -52,10 +52,12 @@ describe('default', () => {
 
       expect(defaultState.api).toMatchObject({
         rest: {
-          github: {},
-        },
-        graphql: {
-          github: {},
+          dog: {
+            randomImage: {
+              src: 'https://via.placeholder.com/300',
+              alt: 'random',
+            },
+          },
         },
       })
     })

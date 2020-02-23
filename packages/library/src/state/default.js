@@ -17,10 +17,12 @@ export function getAppDefaultStateFromData({ isRunningOnLocalHost, isRunningOnGi
     },
     api: {
       rest: {
-        github: {},
-      },
-      graphql: {
-        github: {},
+        dog: {
+          randomImage: {
+            src: 'https://via.placeholder.com/300',
+            alt: 'random',
+          },
+        },
       },
     },
     ui: {},

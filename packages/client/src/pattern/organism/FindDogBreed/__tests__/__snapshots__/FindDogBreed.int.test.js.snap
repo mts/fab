@@ -15,7 +15,7 @@ exports[`<FindDogBreed /> Snaphot must match defaultRender 1`] = `
         onKeyUp={[Function]}
       />
       <button
-        className="breedSearchButton button"
+        className="button"
         onClick={[Function]}
         type="button"
       >

@@ -1,9 +1,3 @@
-import { string } from 'prop-types'
+export const homeTemplateDefaultProps = {}
 
-export const homeTemplateDefaultProps = {
-  className: '',
-}
-
-export const homeTemplatePropTypes = {
-  className: string,
-}
+export const homeTemplatePropTypes = {}

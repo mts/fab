@@ -1,13 +1,10 @@
 .breed {
-  padding: 2rem;
+  padding: 1rem;
 
   &Search {
-    height: auto;
-    vertical-align: top;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 800px;
 
     @media (max-width: 767px) {
       flex-direction: column;
@@ -27,19 +24,12 @@
   }
 
   &Show {
-    @media (max-width: 767px) {
+    @media (max-width: 1024px) {
+      padding: 1rem 0;
       max-height: 300px;
     }
 
-    @media (max-width: 1024px) {
-      padding: 1rem 0;
-      max-height: 400px;
-    }
-
-    width: 100%;
-    max-width: 800px;
-    height: 500px;
-    max-height: 500px;
+    height: 300px;
     position: relative;
   }
 }

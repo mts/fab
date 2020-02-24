@@ -10,19 +10,19 @@ export const setDogRandomImageThunk = breed => async dispatch => {
   dispatch(
     apiRestDogSetRandomImageAction({
       message: dogImageUrl,
-      breed,
+      breed: dogImageUrl === placeholderURL ? 'Unknown' : breed,
     }),
   )
 }
 
 export const setCatRandomImageThunk = breed => async dispatch => {
   const restCatAPIResponseData = await getRandomCatImageByBreed(breed)
-  const catImageUrl = restCatAPIResponseData === [] ? placeholderURL : restCatAPIResponseData[0].url
+  const catImageUrl = !restCatAPIResponseData[0] ? placeholderURL : restCatAPIResponseData[0].url
 
   dispatch(
     apiRestCatSetRandomImageAction({
       message: catImageUrl,
-      breed,
+      breed: catImageUrl === placeholderURL ? 'Unknown' : breed,
     }),
   )
 }

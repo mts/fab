@@ -1,15 +1,9 @@
 /*!
-  Copyright (c) 2017 Jed Watson.
-  Licensed under the MIT License (MIT), see
-  http://jedwatson.github.io/classnames
-*/
-
-/*!
  * @project        FAB
- * @name           app-modern.3f51.js
+ * @name           app-modern.5fb8.js
  * @author         MTS
- * @build          Mon, Feb 24, 2020 12:00 AM ET
- * @release        3491287160866a666773ec9dfaaeceedbbbcde33 [master]
+ * @build          Tue, Feb 25, 2020 12:14 AM ET
+ * @release        916d71827b448555624a1cdcb6de070e4ab05d25 [master]
  * @copyright      Copyright (c) 2020 FAB
  *
  */

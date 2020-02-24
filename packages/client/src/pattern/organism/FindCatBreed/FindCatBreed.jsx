@@ -19,7 +19,7 @@ export function Component({ randomImage }) {
       searchEntry={breedEntry.input}
       selectOptions={catSelectOptions}
       buttonText="Search Cat"
-      imageSource={{ src: randomImage.src, alt: randomImage.alt }}
+      randomImage={randomImage}
       setRandomImage={setRandomImage}
     />
   )

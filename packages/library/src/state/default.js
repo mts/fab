@@ -1,12 +1,11 @@
 import {
-  windowObjectExists,
   isRunningOnLocalHostViaDomain as isRunningOnLocalHostViaDomainDefault,
   isRunningOnGitHubPages as isRunningOnGitHubPagesDefault,
 } from '../environment'
 import { placeholderURL } from '../client/constant'
 
 export function getAppDefaultStateFromWindow() {
-  return windowObjectExists ? window.appDefaultState : {}
+  return window.appDefaultState
 }
 
 export function getAppDefaultStateFromData({ isRunningOnLocalHost, isRunningOnGitHubPages, isRunningOnHeroku }) {

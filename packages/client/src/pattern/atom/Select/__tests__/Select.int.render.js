@@ -1,8 +1,6 @@
 import React from 'react'
-import { Provider } from 'react-redux'
 import { Select } from '../Select'
-import { getAppMockStore } from '../../../../../../library/src/store/mock'
-import { mockAppState } from '../../../../../../library/src/state/mock'
+import { dogRandomImage, catRandomImage } from '../../Image/__tests__/Image.int.render'
 
 export const dogSelectOptions = [
   { value: 'affenpinscher', text: 'affenpinscher' },
@@ -208,15 +206,6 @@ export const catSelectOptions = [
   { value: 'Singapura', text: 'Singapura' },
   { value: 'Snowshoe', text: 'Snowshoe' },
 ]
+export const dogSelectRender = <Select options={dogSelectOptions} randomImage={dogRandomImage} setRandomImage={() => {}} />
 
-export const dogSelectRender = (
-  <Provider store={getAppMockStore(mockAppState)}>
-    <Select options={dogSelectOptions} />
-  </Provider>
-)
-
-export const catSelectRender = (
-  <Provider store={getAppMockStore(mockAppState)}>
-    <Select options={catSelectOptions} />
-  </Provider>
-)
+export const catSelectRender = <Select options={catSelectOptions} randomImage={catRandomImage} setRandomImage={() => {}} />

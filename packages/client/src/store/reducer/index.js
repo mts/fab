@@ -1,5 +1,10 @@
 import { combineReducers } from 'redux'
-import { API_REST_DOG_SET_RANDOM_IMAGE, API_REST_CAT_SET_RANDOM_IMAGE } from '../action/actionTypes'
+import {
+  API_REST_DOG_SET_RANDOM_IMAGE,
+  API_REST_DOG_SET_SEARCH_BREED,
+  API_REST_CAT_SET_RANDOM_IMAGE,
+  API_REST_CAT_SET_SEARCH_BREED,
+} from '../action/actionTypes'
 
 export const getAppReducer = () =>
   combineReducers({
@@ -27,6 +32,17 @@ export const getAppReducer = () =>
               },
             },
           }
+        case API_REST_DOG_SET_SEARCH_BREED:
+          return {
+            ...state,
+            rest: {
+              ...state.rest,
+              dog: {
+                ...state.rest.dog,
+                searchBreed: action.payload,
+              },
+            },
+          }
         case API_REST_CAT_SET_RANDOM_IMAGE:
           return {
             ...state,
@@ -40,6 +56,17 @@ export const getAppReducer = () =>
                   breed: action.payload.breed,
                   subBreed: '',
                 },
+              },
+            },
+          }
+        case API_REST_CAT_SET_SEARCH_BREED:
+          return {
+            ...state,
+            rest: {
+              ...state.rest,
+              cat: {
+                ...state.rest.cat,
+                searchBreed: action.payload,
               },
             },
           }

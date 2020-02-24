@@ -2,33 +2,68 @@
 
 exports[`<HomeTemplate /> Snaphot must match defaultRender 1`] = `
 <div
-  className="breed"
+  className="homeTemplate"
 >
   <div
-    className="breedSearch"
-  >
-    <input
-      className="input"
-      onKeyUp={[Function]}
-    />
-    <button
-      className="button"
-      onClick={[Function]}
-      type="button"
-    >
-      Search Dog
-    </button>
-  </div>
-  <div
-    className="breedShow"
+    className="breed"
   >
     <div
-      className="image"
+      className="breedSearch"
     >
-      <img
-        alt="random"
-        src="https://via.placeholder.com/300"
+      <input
+        className="input"
+        onKeyUp={[Function]}
       />
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        Search Dog
+      </button>
+    </div>
+    <div
+      className="breedShow"
+    >
+      <div
+        className="image"
+      >
+        <img
+          alt="random"
+          src="https://via.placeholder.com/300"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="breed"
+  >
+    <div
+      className="breedSearch"
+    >
+      <input
+        className="input"
+        onKeyUp={[Function]}
+      />
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        Search Cat
+      </button>
+    </div>
+    <div
+      className="breedShow"
+    >
+      <div
+        className="image"
+      >
+        <img
+          alt="random"
+          src="https://via.placeholder.com/300"
+        />
+      </div>
     </div>
   </div>
 </div>

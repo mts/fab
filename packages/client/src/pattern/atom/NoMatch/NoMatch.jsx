@@ -1,9 +1,9 @@
 import React from 'react'
 import { noMatchDefaultProps, noMatchPropTypes } from './NoMatch.prop'
 
-export function NoMatch({ className, location }) {
+export function NoMatch({ location }) {
   return (
-    <div className={className}>
+    <div>
       <h3>
         No match for <code>{location.pathname}</code>
       </h3>

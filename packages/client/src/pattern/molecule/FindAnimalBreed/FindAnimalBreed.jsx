@@ -10,11 +10,13 @@ import { breedEntry } from '../../../../../library/src/client/constant'
 export function FindAnimalBreed({ searchEntry, selectOptions, buttonText, randomImage, setRandomImage }) {
   return (
     <div className={breed}>
+      <h2>Random {randomImage.breed} breed image</h2>
+      <h4>Type in new breed, press enter or click search</h4>
       <div className={breedSearch}>
         {searchEntry === breedEntry.select ? (
           <Select className={breedSearchSelect} options={selectOptions} randomImage={randomImage} setRandomImage={setRandomImage} />
         ) : (
-          <Input className={breedSearchInput} setRandomImage={setRandomImage} />
+          <Input className={breedSearchInput} randomImage={randomImage} setRandomImage={setRandomImage} />
         )}
         <Button className={breedSearchButton} text={buttonText} randomImage={randomImage} setRandomImage={setRandomImage} />
       </div>

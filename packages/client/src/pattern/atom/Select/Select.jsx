@@ -5,11 +5,11 @@ import uuidv1 from 'uuid/v1'
 import { selectDefaultProps, selectPropTypes } from './Select.prop'
 import { select } from './Select.scss'
 import { clientAppStore } from '../../../store/client'
-import { setAppCompleteStateThunk } from '../../../store/thunk/completeState'
+import { setDogRandomImageThunk } from '../../../store/thunk/setRandomImage'
 
 export function Component({ options, randomImage }) {
   function onChange(e) {
-    clientAppStore.dispatch(setAppCompleteStateThunk(e.target.value.split('-')[0]))
+    clientAppStore.dispatch(setDogRandomImageThunk(e.target.value.split('-')[0]))
   }
 
   return (

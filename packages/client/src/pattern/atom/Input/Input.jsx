@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react'
 import { inputDefaultProps, inputPropTypes } from './Input.prop'
 import { input } from './Input.scss'
 import { clientAppStore } from '../../../store/client'
-import { setAppCompleteStateThunk } from '../../../store/thunk/completeState'
+import { setDogRandomImageThunk } from '../../../store/thunk/setRandomImage'
 import { keyCode } from '../../../../../library/src/client/constant'
 
 export function Input() {
@@ -12,7 +12,7 @@ export function Input() {
 
   function onKeyUp(e) {
     if (e.keyCode === keyCode.enter) {
-      clientAppStore.dispatch(setAppCompleteStateThunk(inputRef.current.value))
+      clientAppStore.dispatch(setDogRandomImageThunk(inputRef.current.value))
     }
   }
 

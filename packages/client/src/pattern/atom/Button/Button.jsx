@@ -4,11 +4,11 @@ import { bindActionCreators } from 'redux'
 import { buttonDefaultProps, buttonPropTypes } from './Button.prop'
 import { button } from './Button.scss'
 import { clientAppStore } from '../../../store/client'
-import { setAppCompleteStateThunk } from '../../../store/thunk/completeState'
+import { setDogRandomImageThunk } from '../../../store/thunk/setRandomImage'
 
 export function Component({ text, randomImage }) {
   function onClick() {
-    clientAppStore.dispatch(setAppCompleteStateThunk(randomImage.breed))
+    clientAppStore.dispatch(setDogRandomImageThunk(randomImage.breed))
   }
 
   return (

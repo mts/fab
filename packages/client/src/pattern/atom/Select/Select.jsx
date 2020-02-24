@@ -4,12 +4,10 @@ import { bindActionCreators } from 'redux'
 import uuidv1 from 'uuid/v1'
 import { selectDefaultProps, selectPropTypes } from './Select.prop'
 import { select } from './Select.scss'
-import { clientAppStore } from '../../../store/client'
-import { setDogRandomImageThunk } from '../../../store/thunk/setRandomImage'
 
-export function Component({ options, randomImage }) {
+export function Component({ options, randomImage, setRandomImage }) {
   function onChange(e) {
-    clientAppStore.dispatch(setDogRandomImageThunk(e.target.value.split('-')[0]))
+    setRandomImage(e.target.value.split('-')[0])
   }
 
   return (

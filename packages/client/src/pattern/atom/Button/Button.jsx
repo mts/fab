@@ -3,12 +3,10 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { buttonDefaultProps, buttonPropTypes } from './Button.prop'
 import { button } from './Button.scss'
-import { clientAppStore } from '../../../store/client'
-import { setDogRandomImageThunk } from '../../../store/thunk/setRandomImage'
 
-export function Component({ text, randomImage }) {
+export function Component({ text, randomImage, setRandomImage }) {
   function onClick() {
-    clientAppStore.dispatch(setDogRandomImageThunk(randomImage.breed))
+    setRandomImage(randomImage.breed)
   }
 
   return (

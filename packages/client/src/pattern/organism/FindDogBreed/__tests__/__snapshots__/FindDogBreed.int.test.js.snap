@@ -2,37 +2,33 @@
 
 exports[`<FindDogBreed /> Snaphot must match defaultRender 1`] = `
 <div
-  className=""
+  className="breed"
 >
   <div
-    className="breed"
+    className="breedSearch"
+  >
+    <input
+      className="input"
+      onKeyUp={[Function]}
+    />
+    <button
+      className="button"
+      onClick={[Function]}
+      type="button"
+    >
+      Search Dog
+    </button>
+  </div>
+  <div
+    className="breedShow"
   >
     <div
-      className="breedSearch"
+      className="image"
     >
-      <input
-        className="input"
-        onKeyUp={[Function]}
+      <img
+        alt="random"
+        src="https://via.placeholder.com/300"
       />
-      <button
-        className="button"
-        onClick={[Function]}
-        type="button"
-      >
-        Search Dog
-      </button>
-    </div>
-    <div
-      className="breedShow"
-    >
-      <div
-        className="image"
-      >
-        <img
-          alt="random"
-          src="https://via.placeholder.com/300"
-        />
-      </div>
     </div>
   </div>
 </div>

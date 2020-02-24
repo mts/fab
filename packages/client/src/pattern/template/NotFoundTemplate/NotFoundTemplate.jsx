@@ -4,13 +4,13 @@ import { homePagePath } from '../../../route/path'
 import { NoMatch } from '../../atom/NoMatch'
 import { notFoundTemplateDefaultProps, notFoundTemplatePropTypes } from './NotFoundTemplate.prop'
 
-export function NotFoundTemplate({ className, location }) {
+export function NotFoundTemplate({ location }) {
   return (
-    <div className={className}>
+    <>
       <h2>Not Found</h2>
       <NoMatch location={location} />
       <Link to={homePagePath}> Back to Home Page</Link>
-    </div>
+    </>
   )
 }
 

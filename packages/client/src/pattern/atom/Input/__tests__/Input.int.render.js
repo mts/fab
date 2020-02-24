@@ -1,4 +1,6 @@
 import React from 'react'
 import { Input } from '../Input'
 
-export const defaultRender = <Input />
+const randomImage = { breed: 'some-breed' }
+
+export const defaultRender = <Input randomImage={randomImage} />

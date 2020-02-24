@@ -51,7 +51,6 @@ const configureBabelLoader = browserList => {
           '@babel/plugin-transform-classes',
           '@babel/plugin-transform-runtime',
           '@babel/plugin-transform-spread',
-          'import-graphql',
           'syntax-async-functions',
         ],
       },

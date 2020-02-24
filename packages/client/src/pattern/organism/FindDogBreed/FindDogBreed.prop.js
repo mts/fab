@@ -1,9 +1,7 @@
-import { string } from 'prop-types'
+import { func } from 'prop-types'
 
-export const findDogBreedDefaultProps = {
-  className: '',
-}
+export const findDogBreedDefaultProps = {}
 
 export const findDogBreedPropTypes = {
-  className: string,
+  apiRestDogSetSearchBreedAction: func.isRequired,
 }

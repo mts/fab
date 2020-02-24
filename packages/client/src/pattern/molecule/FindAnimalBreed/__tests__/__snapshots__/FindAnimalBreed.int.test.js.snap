@@ -4,15 +4,22 @@ exports[`<FindAnimalBreed /> Snaphot must match findCatBreedRender 1`] = `
 <div
   className="breed"
 >
+  <h2>
+    A random image of 
+     breed
+  </h2>
+  <h4>
+    Type in new breed, press enter or click search
+  </h4>
   <div
     className="breedSearch"
   >
     <input
-      className="breedSearchInput input"
+      className="input"
       onKeyUp={[Function]}
     />
     <button
-      className="breedSearchButton button"
+      className="button"
       onClick={[Function]}
       type="button"
     >
@@ -26,7 +33,7 @@ exports[`<FindAnimalBreed /> Snaphot must match findCatBreedRender 1`] = `
       className="image"
     >
       <img
-        alt="cute cat"
+        alt="beng"
         src="https://66.media.tumblr.com/tumblr_m4iejdP8Hb1qd477zo1_250.jpg"
       />
     </div>
@@ -38,15 +45,22 @@ exports[`<FindAnimalBreed /> Snaphot must match findDogBreedRender 1`] = `
 <div
   className="breed"
 >
+  <h2>
+    A random image of 
+     breed
+  </h2>
+  <h4>
+    Type in new breed, press enter or click search
+  </h4>
   <div
     className="breedSearch"
   >
     <input
-      className="breedSearchInput input"
+      className="input"
       onKeyUp={[Function]}
     />
     <button
-      className="breedSearchButton button"
+      className="button"
       onClick={[Function]}
       type="button"
     >
@@ -60,7 +74,7 @@ exports[`<FindAnimalBreed /> Snaphot must match findDogBreedRender 1`] = `
       className="image"
     >
       <img
-        alt="cute dog"
+        alt="collie"
         src="https://images.dog.ceo/breeds/collie-border/n02106166_1031.jpg"
       />
     </div>

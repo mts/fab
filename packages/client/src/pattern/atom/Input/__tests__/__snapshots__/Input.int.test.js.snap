@@ -4,5 +4,6 @@ exports[`<Input /> Snaphot must match defaultRender 1`] = `
 <input
   className="input"
   onKeyUp={[Function]}
+  placeholder="some-breed"
 />
 `;

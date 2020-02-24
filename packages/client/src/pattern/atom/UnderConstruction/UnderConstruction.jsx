@@ -1,14 +1,14 @@
 import React from 'react'
 import { underConstructionDefaultProps, underConstructionPropTypes } from './UnderConstruction.prop'
 
-export function UnderConstruction({ className }) {
+export function UnderConstruction() {
   return (
-    <div className={className}>
+    <>
       Under construction{' '}
       <span role="img" aria-label="emoji">
         🙂
       </span>
-    </div>
+    </>
   )
 }
 

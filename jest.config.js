@@ -3,7 +3,6 @@ module.exports = {
   roots: ['<rootDir>'],
   transform: {
     '^.+\\.jsx?$': 'babel-jest',
-    '\\.(gql|graphql)$': 'jest-transform-graphql',
   },
   coverageDirectory: './coverage/',
   collectCoverage: true,
@@ -31,10 +30,10 @@ module.exports = {
   moduleFileExtensions: ['js', 'jsx'],
   coverageThreshold: {
     global: {
-      statements: 88,
-      branches: 68,
-      functions: 85,
-      lines: 88,
+      statements: 75,
+      branches: 52,
+      functions: 68,
+      lines: 75,
     },
   },
 }

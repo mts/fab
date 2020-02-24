@@ -1,10 +1,7 @@
-import { string, object } from 'prop-types'
+import { object } from 'prop-types'
 
-export const notFoundPageDefaultProps = {
-  className: '',
-}
+export const notFoundPageDefaultProps = {}
 
 export const notFoundPagePropTypes = {
-  className: string,
   location: object.isRequired,
 }

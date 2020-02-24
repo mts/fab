@@ -5,7 +5,6 @@ jest.mock('../../environment', () => ({
   isRunningOnLocalHostViaPort: false,
   isRunningOnLocalHostViaDomain: false,
   isRunningOnGitHubPages: false,
-  windowObjectExists: false,
 }))
 
 const environmentMockObject = require('../../environment')

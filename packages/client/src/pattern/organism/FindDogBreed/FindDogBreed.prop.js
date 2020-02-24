@@ -1,9 +1,3 @@
-import { string } from 'prop-types'
+export const findDogBreedDefaultProps = {}
 
-export const findDogBreedDefaultProps = {
-  className: '',
-}
-
-export const findDogBreedPropTypes = {
-  className: string,
-}
+export const findDogBreedPropTypes = {}

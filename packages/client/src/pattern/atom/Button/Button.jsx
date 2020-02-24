@@ -2,9 +2,9 @@ import React from 'react'
 import { buttonDefaultProps, buttonPropTypes } from './Button.prop'
 import { button } from './Button.scss'
 
-export function Button({ text, randomImage, setRandomImage }) {
+export function Button({ text, setRandomImage, searchBreed }) {
   function onClick() {
-    setRandomImage(randomImage.breed)
+    setRandomImage(searchBreed)
   }
 
   return (

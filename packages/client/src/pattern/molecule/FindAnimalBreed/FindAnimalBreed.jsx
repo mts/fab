@@ -7,16 +7,16 @@ import { Button } from '../../atom/Button'
 import { Image } from '../../atom/Image'
 import { breedEntry } from '../../../../../library/src/client/constant'
 
-export function FindAnimalBreed({ searchEntry, selectOptions, buttonText, imageSource }) {
+export function FindAnimalBreed({ searchEntry, selectOptions, buttonText, imageSource, setRandomImage }) {
   return (
     <div className={breed}>
       <div className={breedSearch}>
         {searchEntry === breedEntry.select ? (
-          <Select className={breedSearchSelect} options={selectOptions} />
+          <Select className={breedSearchSelect} options={selectOptions} setRandomImage={setRandomImage} />
         ) : (
-          <Input className={breedSearchInput} />
+          <Input className={breedSearchInput} setRandomImage={setRandomImage} />
         )}
-        <Button className={breedSearchButton} text={buttonText} />
+        <Button className={breedSearchButton} text={buttonText} setRandomImage={setRandomImage} />
       </div>
       <div className={breedShow}>
         <Image source={imageSource} />

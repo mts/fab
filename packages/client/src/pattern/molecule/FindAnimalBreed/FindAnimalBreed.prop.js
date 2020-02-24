@@ -1,4 +1,4 @@
-import { oneOf } from 'prop-types'
+import { oneOf, func } from 'prop-types'
 import { selectPropTypes } from '../../atom/Select/Select.prop'
 import { buttonPropTypes } from '../../atom/Button/Button.prop'
 import { imagePropTypes } from '../../atom/Image/Image.prop'
@@ -11,4 +11,5 @@ export const findAnimalBreedPropTypes = {
   buttonText: buttonPropTypes.text,
   imageSource: imagePropTypes.source,
   searchEntry: oneOf([breedEntry.select, breedEntry.input]).isRequired,
+  setRandomImage: func.isRequired,
 }

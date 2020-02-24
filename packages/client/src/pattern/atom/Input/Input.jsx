@@ -1,18 +1,16 @@
 import React, { useRef, useEffect } from 'react'
 import { inputDefaultProps, inputPropTypes } from './Input.prop'
 import { input } from './Input.scss'
-import { clientAppStore } from '../../../store/client'
-import { setDogRandomImageThunk } from '../../../store/thunk/setRandomImage'
 import { keyCode } from '../../../../../library/src/client/constant'
 
-export function Input() {
+export function Input({ setRandomImage }) {
   const inputRef = useRef()
 
   useEffect(() => inputRef.current && inputRef.current.focus())
 
   function onKeyUp(e) {
     if (e.keyCode === keyCode.enter) {
-      clientAppStore.dispatch(setDogRandomImageThunk(inputRef.current.value))
+      setRandomImage(inputRef.current.value)
     }
   }
 

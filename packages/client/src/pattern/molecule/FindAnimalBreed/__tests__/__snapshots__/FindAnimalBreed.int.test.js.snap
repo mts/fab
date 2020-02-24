@@ -8,7 +8,7 @@ exports[`<FindAnimalBreed /> Snaphot must match findCatBreedRender 1`] = `
     className="breedSearch"
   >
     <input
-      className="breedSearchInput input"
+      className="input"
       onKeyUp={[Function]}
     />
     <button
@@ -42,7 +42,7 @@ exports[`<FindAnimalBreed /> Snaphot must match findDogBreedRender 1`] = `
     className="breedSearch"
   >
     <input
-      className="breedSearchInput input"
+      className="input"
       onKeyUp={[Function]}
     />
     <button

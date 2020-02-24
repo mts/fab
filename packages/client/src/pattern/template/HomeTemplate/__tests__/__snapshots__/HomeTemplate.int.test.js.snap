@@ -14,7 +14,7 @@ exports[`<HomeTemplate /> Snaphot must match defaultRender 1`] = `
         className="breedSearch"
       >
         <input
-          className="breedSearchInput input"
+          className="input"
           onKeyUp={[Function]}
         />
         <button

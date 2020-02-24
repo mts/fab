@@ -3,7 +3,6 @@ module.exports = {
   roots: ['<rootDir>'],
   transform: {
     '^.+\\.jsx?$': 'babel-jest',
-    '\\.(gql|graphql)$': 'jest-transform-graphql',
   },
   coverageDirectory: './coverage/',
   collectCoverage: true,

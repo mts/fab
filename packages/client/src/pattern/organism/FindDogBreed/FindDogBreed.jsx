@@ -7,18 +7,11 @@ import { FindAnimalBreed } from '../../molecule/FindAnimalBreed'
 import { dogSelectOptions } from '../../atom/Select/__tests__/Select.int.render'
 import { breedEntry } from '../../../../../library/src/client/constant'
 
-export function Component({ randomImage, apiRestDogSetRandomImageAction }) {
-  function selectOnChange(selectedValue) {
-    apiRestDogSetRandomImageAction({
-      message: selectedValue,
-    })
-  }
-
+export function Component({ randomImage }) {
   return (
     <FindAnimalBreed
       searchEntry={breedEntry.input}
       selectOptions={dogSelectOptions}
-      selectOnchange={selectOnChange}
       buttonText="Search Dog"
       imageSource={{ src: randomImage.src, alt: randomImage.alt }}
     />

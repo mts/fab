@@ -5,14 +5,12 @@ Array [
   <h2>
     Not Found
   </h2>,
-  <div>
-    <h3>
-      No match for 
-      <code>
-        some-path-name
-      </code>
-    </h3>
-  </div>,
+  <h3>
+    No match for 
+    <code>
+      some-path-name
+    </code>
+  </h3>,
   <div />,
 ]
 `;

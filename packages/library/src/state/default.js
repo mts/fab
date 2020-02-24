@@ -23,6 +23,12 @@ export function getAppDefaultStateFromData({ isRunningOnLocalHost, isRunningOnGi
             alt: 'random',
           },
         },
+        cat: {
+          randomImage: {
+            src: placeholderURL,
+            alt: 'random',
+          },
+        },
       },
     },
     ui: {},

@@ -4,16 +4,14 @@ exports[`<NotFoundPage /> Snaphot must match asyncRender 1`] = `null`;
 
 exports[`<NotFoundPage /> Snaphot must match defaultRender 1`] = `
 Array [
-  <div>
-    Under construction
-     
-    <span
-      aria-label="emoji"
-      role="img"
-    >
-      🙂
-    </span>
-  </div>,
+  "Under construction",
+  " ",
+  <span
+    aria-label="emoji"
+    role="img"
+  >
+    🙂
+  </span>,
   <div>
     some-path-name
   </div>,

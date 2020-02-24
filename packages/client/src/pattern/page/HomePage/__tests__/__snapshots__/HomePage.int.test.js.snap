@@ -4,44 +4,81 @@ exports[`<HomePage /> Snaphot must match asyncRender 1`] = `null`;
 
 exports[`<HomePage /> Snaphot must match defaultRender 1`] = `
 <div
-  className=""
+  className="homeTemplate"
 >
   <div
-    className="homeTemplate"
+    className="breed"
   >
+    <h2>
+      A random image of 
+       breed
+    </h2>
+    <h4>
+      Type in new breed, press enter or click search
+    </h4>
     <div
-      className=""
+      className="breedSearch"
+    >
+      <input
+        className="input"
+        onKeyUp={[Function]}
+      />
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        Search Dog
+      </button>
+    </div>
+    <div
+      className="breedShow"
     >
       <div
-        className="breed"
+        className="image"
       >
-        <div
-          className="breedSearch"
-        >
-          <input
-            className="breedSearchInput input"
-            onKeyUp={[Function]}
-          />
-          <button
-            className="breedSearchButton button"
-            onClick={[Function]}
-            type="button"
-          >
-            Search Dog
-          </button>
-        </div>
-        <div
-          className="breedShow"
-        >
-          <div
-            className="image"
-          >
-            <img
-              alt="random"
-              src="https://via.placeholder.com/300"
-            />
-          </div>
-        </div>
+        <img
+          alt="random"
+          src="https://via.placeholder.com/300"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="breed"
+  >
+    <h2>
+      A random image of 
+       breed
+    </h2>
+    <h4>
+      Type in new breed, press enter or click search
+    </h4>
+    <div
+      className="breedSearch"
+    >
+      <input
+        className="input"
+        onKeyUp={[Function]}
+      />
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        Search Cat
+      </button>
+    </div>
+    <div
+      className="breedShow"
+    >
+      <div
+        className="image"
+      >
+        <img
+          alt="random"
+          src="https://via.placeholder.com/300"
+        />
       </div>
     </div>
   </div>

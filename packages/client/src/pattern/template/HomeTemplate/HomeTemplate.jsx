@@ -1,13 +1,14 @@
 import React from 'react'
-import cx from 'classnames'
-import { homeTemplate } from './HomeTemplate.scss'
 import { homeTemplateDefaultProps, homeTemplatePropTypes } from './HomeTemplate.prop'
 import { FindDogBreed } from '../../organism/FindDogBreed'
+import { FindCatBreed } from '../../organism/FindCatBreed'
+import { homeTemplate } from './HomeTemplate.scss'
 
-export function HomeTemplate({ className }) {
+export function HomeTemplate() {
   return (
-    <div className={cx(className, homeTemplate)}>
+    <div className={homeTemplate}>
       <FindDogBreed />
+      <FindCatBreed />
     </div>
   )
 }

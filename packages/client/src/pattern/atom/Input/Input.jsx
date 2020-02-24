@@ -1,22 +1,22 @@
 import React, { useRef, useEffect } from 'react'
-import cx from 'classnames'
 import { inputDefaultProps, inputPropTypes } from './Input.prop'
 import { input } from './Input.scss'
-import { clientAppStore } from '../../../store/client'
-import { setAppCompleteStateThunk } from '../../../store/thunk/completeState'
+import { keyCode } from '../../../../../library/src/client/constant'
 
-export function Input({ className }) {
+export function Input({ randomImage, setRandomImage, setSearchBreed }) {
   const inputRef = useRef()
 
   useEffect(() => inputRef.current && inputRef.current.focus())
 
   function onKeyUp(e) {
-    if (e.keyCode === 13) {
-      clientAppStore.dispatch(setAppCompleteStateThunk(inputRef.current.value))
+    setSearchBreed(inputRef.current.value)
+
+    if (e.keyCode === keyCode.enter) {
+      setRandomImage(inputRef.current.value)
     }
   }
 
-  return <input className={cx(className, input)} onKeyUp={onKeyUp} ref={inputRef} />
+  return <input className={input} onKeyUp={onKeyUp} ref={inputRef} placeholder={randomImage.breed} />
 }
 
 Input.defaultProps = inputDefaultProps

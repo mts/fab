@@ -1,13 +1,12 @@
 import React from 'react'
-import cx from 'classnames'
 import { imageDefaultProps, imagePropTypes } from './Image.prop'
 import { image } from './Image.scss'
 
-export function Image({ className, source }) {
-  const { src, alt } = source
+export function Image({ randomImage }) {
+  const { src, alt } = randomImage
 
   return (
-    <div className={cx(className, image)}>
+    <div className={image}>
       <img src={src} alt={alt} />
     </div>
   )

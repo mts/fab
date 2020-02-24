@@ -1,9 +1,9 @@
-import { string } from 'prop-types'
+import { object, func } from 'prop-types'
 
-export const inputDefaultProps = {
-  className: '',
-}
+export const inputDefaultProps = {}
 
 export const inputPropTypes = {
-  className: string,
+  randomImage: object.isRequired,
+  setRandomImage: func.isRequired,
+  setSearchBreed: func.isRequired,
 }

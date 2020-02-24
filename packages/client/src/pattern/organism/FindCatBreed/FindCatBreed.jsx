@@ -2,27 +2,27 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import * as actionCreators from '../../../store/action/actionCreators'
-import { findDogBreedDefaultProps, findDogBreedPropTypes } from './FindDogBreed.prop'
+import { findCatBreedDefaultProps, findCatBreedPropTypes } from './FindCatBreed.prop'
 import { FindAnimalBreed } from '../../molecule/FindAnimalBreed'
-import { dogSelectOptions } from '../../atom/Select/__tests__/Select.int.render'
+import { catSelectOptions } from '../../atom/Select/__tests__/Select.int.render'
 import { breedEntry } from '../../../../../library/src/client/constant'
 import { clientAppStore } from '../../../store/client'
-import { setDogRandomImageThunk } from '../../../store/thunk/setRandomImage'
+import { setCatRandomImageThunk } from '../../../store/thunk/setRandomImage'
 
-export function Component({ randomImage, searchBreed, apiRestDogSetSearchBreedAction }) {
+export function Component({ randomImage, searchBreed, apiRestCatSetSearchBreedAction }) {
   function setRandomImage(breed) {
-    clientAppStore.dispatch(setDogRandomImageThunk(breed))
+    clientAppStore.dispatch(setCatRandomImageThunk(breed))
   }
 
   function setSearchBreed(breed) {
-    apiRestDogSetSearchBreedAction(breed)
+    apiRestCatSetSearchBreedAction(breed)
   }
 
   return (
     <FindAnimalBreed
       searchEntry={breedEntry.input}
-      selectOptions={dogSelectOptions}
-      buttonText="Search Dog"
+      selectOptions={catSelectOptions}
+      buttonText="Search Cat"
       randomImage={randomImage}
       setRandomImage={setRandomImage}
       searchBreed={searchBreed}
@@ -31,14 +31,14 @@ export function Component({ randomImage, searchBreed, apiRestDogSetSearchBreedAc
   )
 }
 
-Component.defaultProps = findDogBreedDefaultProps
+Component.defaultProps = findCatBreedDefaultProps
 
-Component.propTypes = findDogBreedPropTypes
+Component.propTypes = findCatBreedPropTypes
 
-export const FindDogBreed = connect(
+export const FindCatBreed = connect(
   ({ api }) => ({
-    randomImage: api.rest.dog.randomImage,
-    searchBreed: api.rest.dog.searchBreed,
+    randomImage: api.rest.cat.randomImage,
+    searchBreed: api.rest.cat.searchBreed,
   }),
   dispatch => bindActionCreators(actionCreators, dispatch),
 )(Component)

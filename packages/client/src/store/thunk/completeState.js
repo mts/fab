@@ -1,16 +1,35 @@
-import { apiRestDogSetRandomImageAction } from '../action/actionCreators'
+import {
+  apiRestDogSetRandomImageAction,
+  apiRestDogSetSearchBreedAction,
+  apiRestCatSetRandomImageAction,
+  apiRestCatSetSearchBreedAction,
+} from '../action/actionCreators'
 import { getRandomDogImageByBreed } from '../../api/rest/dog/image'
-import { placeholderURL } from '../../../../library/src/client/constant'
+import { getRandomCatImageByBreed } from '../../api/rest/cat/image'
+import { placeholderURL, defaultBreed, httpResponseCode } from '../../../../library/src/client/constant'
 
-export const setAppCompleteStateThunk = (breed = 'collie') => async dispatch => {
-  const restResponseData = await getRandomDogImageByBreed(breed)
-
-  const message = restResponseData.code === 404 ? placeholderURL : restResponseData.message
+export const setAppCompleteStateThunk = () => async dispatch => {
+  const restDogAPIResponseData = await getRandomDogImageByBreed(defaultBreed.dog)
+  const dogImageUrl = restDogAPIResponseData.code === httpResponseCode.notFound ? placeholderURL : restDogAPIResponseData.message
 
   dispatch(
     apiRestDogSetRandomImageAction({
-      message,
-      breed,
+      message: dogImageUrl,
+      breed: defaultBreed.dog,
     }),
   )
+
+  dispatch(apiRestDogSetSearchBreedAction(defaultBreed.dog))
+
+  const restCatAPIResponseData = await getRandomCatImageByBreed(defaultBreed.cat)
+  const catImageUrl = restCatAPIResponseData === [] ? placeholderURL : restCatAPIResponseData[0].url
+
+  dispatch(
+    apiRestCatSetRandomImageAction({
+      message: catImageUrl,
+      breed: defaultBreed.cat,
+    }),
+  )
+
+  dispatch(apiRestCatSetSearchBreedAction(defaultBreed.cat))
 }

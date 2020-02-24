@@ -14,6 +14,12 @@ export const mockAppState = {
           alt: 'random',
         },
       },
+      cat: {
+        randomImage: {
+          src: placeholderURL,
+          alt: 'random',
+        },
+      },
     },
   },
   ui: {},

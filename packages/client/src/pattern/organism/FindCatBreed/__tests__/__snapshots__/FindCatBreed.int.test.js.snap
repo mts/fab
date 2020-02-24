@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<FindDogBreed /> Snaphot must match defaultRender 1`] = `
+exports[`<FindCatBreed /> Snaphot must match defaultRender 1`] = `
 <div
   className="breed"
 >
@@ -23,7 +23,7 @@ exports[`<FindDogBreed /> Snaphot must match defaultRender 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Search Dog
+      Search Cat
     </button>
   </div>
   <div

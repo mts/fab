@@ -7,9 +7,9 @@ import { breedEntry } from '../../../../../library/src/client/constant'
 export const findAnimalBreedDefaultProps = {}
 
 export const findAnimalBreedPropTypes = {
+  searchEntry: oneOf([breedEntry.select, breedEntry.input]).isRequired,
   selectOptions: selectPropTypes.options,
   buttonText: buttonPropTypes.text,
-  imageSource: imagePropTypes.source,
-  searchEntry: oneOf([breedEntry.select, breedEntry.input]).isRequired,
+  randomImage: imagePropTypes.randomImage,
   setRandomImage: func.isRequired,
 }

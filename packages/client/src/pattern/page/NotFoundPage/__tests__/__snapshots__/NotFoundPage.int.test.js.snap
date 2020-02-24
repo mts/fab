@@ -4,9 +4,7 @@ exports[`<NotFoundPage /> Snaphot must match asyncRender 1`] = `null`;
 
 exports[`<NotFoundPage /> Snaphot must match defaultRender 1`] = `
 <div>
-  <div
-    className=""
-  >
+  <div>
     Under construction
      
     <span

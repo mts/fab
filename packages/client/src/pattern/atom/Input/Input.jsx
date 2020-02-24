@@ -3,6 +3,7 @@ import { inputDefaultProps, inputPropTypes } from './Input.prop'
 import { input } from './Input.scss'
 import { clientAppStore } from '../../../store/client'
 import { setAppCompleteStateThunk } from '../../../store/thunk/completeState'
+import { keyCode } from '../../../../../library/src/client/constant'
 
 export function Input() {
   const inputRef = useRef()
@@ -10,7 +11,7 @@ export function Input() {
   useEffect(() => inputRef.current && inputRef.current.focus())
 
   function onKeyUp(e) {
-    if (e.keyCode === 13) {
+    if (e.keyCode === keyCode.enter) {
       clientAppStore.dispatch(setAppCompleteStateThunk(inputRef.current.value))
     }
   }

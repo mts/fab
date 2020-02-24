@@ -1,9 +1,3 @@
-import { string } from 'prop-types'
+export const underConstructionDefaultProps = {}
 
-export const underConstructionDefaultProps = {
-  className: '',
-}
-
-export const underConstructionPropTypes = {
-  className: string,
-}
+export const underConstructionPropTypes = {}

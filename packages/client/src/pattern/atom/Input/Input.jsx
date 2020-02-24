@@ -1,11 +1,10 @@
 import React, { useRef, useEffect } from 'react'
-import cx from 'classnames'
 import { inputDefaultProps, inputPropTypes } from './Input.prop'
 import { input } from './Input.scss'
 import { clientAppStore } from '../../../store/client'
 import { setAppCompleteStateThunk } from '../../../store/thunk/completeState'
 
-export function Input({ className }) {
+export function Input() {
   const inputRef = useRef()
 
   useEffect(() => inputRef.current && inputRef.current.focus())
@@ -16,7 +15,7 @@ export function Input({ className }) {
     }
   }
 
-  return <input className={cx(className, input)} onKeyUp={onKeyUp} ref={inputRef} />
+  return <input className={input} onKeyUp={onKeyUp} ref={inputRef} />
 }
 
 Input.defaultProps = inputDefaultProps

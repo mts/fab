@@ -9,9 +9,13 @@ import { breedEntry } from '../../../../../library/src/client/constant'
 import { clientAppStore } from '../../../store/client'
 import { setCatRandomImageThunk } from '../../../store/thunk/setRandomImage'
 
-export function Component({ randomImage }) {
+export function Component({ randomImage, searchBreed, apiRestCatSetSearchBreedAction }) {
   function setRandomImage(breed) {
     clientAppStore.dispatch(setCatRandomImageThunk(breed))
+  }
+
+  function setSearchBreed(breed) {
+    apiRestCatSetSearchBreedAction(breed)
   }
 
   return (
@@ -21,6 +25,8 @@ export function Component({ randomImage }) {
       buttonText="Search Cat"
       randomImage={randomImage}
       setRandomImage={setRandomImage}
+      searchBreed={searchBreed}
+      setSearchBreed={setSearchBreed}
     />
   )
 }
@@ -32,6 +38,7 @@ Component.propTypes = findCatBreedPropTypes
 export const FindCatBreed = connect(
   ({ api }) => ({
     randomImage: api.rest.cat.randomImage,
+    searchBreed: api.rest.cat.searchBreed,
   }),
   dispatch => bindActionCreators(actionCreators, dispatch),
 )(Component)

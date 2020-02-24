@@ -1,3 +1,7 @@
+import { func } from 'prop-types'
+
 export const findCatBreedDefaultProps = {}
 
-export const findCatBreedPropTypes = {}
+export const findCatBreedPropTypes = {
+  apiRestCatSetSearchBreedAction: func.isRequired,
+}

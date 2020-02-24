@@ -2,8 +2,8 @@ import React from 'react'
 import { imageDefaultProps, imagePropTypes } from './Image.prop'
 import { image } from './Image.scss'
 
-export function Image({ source }) {
-  const { src, alt } = source
+export function Image({ randomImage }) {
+  const { src, alt } = randomImage
 
   return (
     <div className={image}>

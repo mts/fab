@@ -9,6 +9,13 @@ exports[`<HomePage /> Snaphot must match defaultRender 1`] = `
   <div
     className="breed"
   >
+    <h2>
+      A random image of 
+       breed
+    </h2>
+    <h4>
+      Type in new breed, press enter or click search
+    </h4>
     <div
       className="breedSearch"
     >
@@ -40,6 +47,13 @@ exports[`<HomePage /> Snaphot must match defaultRender 1`] = `
   <div
     className="breed"
   >
+    <h2>
+      A random image of 
+       breed
+    </h2>
+    <h4>
+      Type in new breed, press enter or click search
+    </h4>
     <div
       className="breedSearch"
     >

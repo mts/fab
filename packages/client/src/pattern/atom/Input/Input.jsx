@@ -3,7 +3,7 @@ import { inputDefaultProps, inputPropTypes } from './Input.prop'
 import { input } from './Input.scss'
 import { keyCode } from '../../../../../library/src/client/constant'
 
-export function Input({ setRandomImage }) {
+export function Input({ randomImage, setRandomImage }) {
   const inputRef = useRef()
 
   useEffect(() => inputRef.current && inputRef.current.focus())
@@ -14,7 +14,7 @@ export function Input({ setRandomImage }) {
     }
   }
 
-  return <input className={input} onKeyUp={onKeyUp} ref={inputRef} />
+  return <input className={input} onKeyUp={onKeyUp} ref={inputRef} placeholder={randomImage.breed} />
 }
 
 Input.defaultProps = inputDefaultProps

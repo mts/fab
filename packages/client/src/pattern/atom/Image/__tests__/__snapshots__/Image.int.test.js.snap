@@ -5,7 +5,7 @@ exports[`<Image /> Snaphot must match catImageRender 1`] = `
   className="image"
 >
   <img
-    alt="cute cat"
+    alt="beng"
     src="https://66.media.tumblr.com/tumblr_m4iejdP8Hb1qd477zo1_250.jpg"
   />
 </div>
@@ -16,7 +16,7 @@ exports[`<Image /> Snaphot must match dogImageRender 1`] = `
   className="image"
 >
   <img
-    alt="cute dog"
+    alt="collie"
     src="https://images.dog.ceo/breeds/collie-border/n02106166_1031.jpg"
   />
 </div>

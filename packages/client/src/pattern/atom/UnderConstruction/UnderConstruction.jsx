@@ -3,12 +3,12 @@ import { underConstructionDefaultProps, underConstructionPropTypes } from './Und
 
 export function UnderConstruction() {
   return (
-    <div>
+    <>
       Under construction{' '}
       <span role="img" aria-label="emoji">
         🙂
       </span>
-    </div>
+    </>
   )
 }
 

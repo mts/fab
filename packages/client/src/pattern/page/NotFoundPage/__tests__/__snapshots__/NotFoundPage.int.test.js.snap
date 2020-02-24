@@ -3,7 +3,7 @@
 exports[`<NotFoundPage /> Snaphot must match asyncRender 1`] = `null`;
 
 exports[`<NotFoundPage /> Snaphot must match defaultRender 1`] = `
-<div>
+Array [
   <div>
     Under construction
      
@@ -13,9 +13,9 @@ exports[`<NotFoundPage /> Snaphot must match defaultRender 1`] = `
     >
       🙂
     </span>
-  </div>
+  </div>,
   <div>
     some-path-name
-  </div>
-</div>
+  </div>,
+]
 `;

@@ -1,12 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<NotFoundTemplate /> Snaphot must match defaultRender 1`] = `
-<div
-  className=""
->
+Array [
   <h2>
     Not Found
-  </h2>
+  </h2>,
   <div>
     <h3>
       No match for 
@@ -14,7 +12,7 @@ exports[`<NotFoundTemplate /> Snaphot must match defaultRender 1`] = `
         some-path-name
       </code>
     </h3>
-  </div>
-  <div />
-</div>
+  </div>,
+  <div />,
+]
 `;

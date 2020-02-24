@@ -2,12 +2,12 @@ import React from 'react'
 import { UnderConstruction } from '../../atom/UnderConstruction'
 import { notFoundPageDefaultProps, notFoundPagePropTypes } from './NotFoundPage.prop'
 
-export function NotFoundPage({ className, location }) {
+export function NotFoundPage({ location }) {
   return (
-    <div>
-      <UnderConstruction className={className} />
+    <>
+      <UnderConstruction />
       <div>{location.pathname}</div>
-    </div>
+    </>
   )
 }
 

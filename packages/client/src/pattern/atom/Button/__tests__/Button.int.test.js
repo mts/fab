@@ -1,6 +1,6 @@
 import { defaultRender } from './Button.int.render'
 
-jest.mock('../../../../store/thunk/completeState', () => ({ setAppCompleteStateThunk: () => {} }))
+jest.mock('../../../../store/thunk/setRandomImage', () => ({ setDogRandomImageThunk: () => {}, setCatRandomImageThunk: () => {} }))
 
 describe('<Button />', () => {
   describe('Snaphot', () => {

@@ -2,7 +2,7 @@
   <img width="500px" height="250px" src=".docs/image/logo.jpg">
 </p>
 
-<h1 align="center">FAB</h1>
+<h1 align="center">Find Animal Breed</h1>
 
 <p align="center">
   <a aria-label="npm package" href="https://www.npmjs.com/package/fab-client">

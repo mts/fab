@@ -1,6 +1,5 @@
 import React from 'react'
 import { Input } from '../Input'
+import { dogRandomImage } from '../../Image/__tests__/Image.int.render'
 
-const randomImage = { breed: 'some-breed' }
-
-export const defaultRender = <Input randomImage={randomImage} />
+export const defaultRender = <Input randomImage={dogRandomImage} setRandomImage={() => {}} setSearchBreed={() => {}} />

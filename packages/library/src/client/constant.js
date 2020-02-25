@@ -7,6 +7,7 @@ export const keyCode = Object.freeze({
 export const defaultBreed = Object.freeze({
   dog: 'collie',
   cat: 'beng',
+  unknown: 'unknown',
 })
 
 export const httpResponseCode = Object.freeze({

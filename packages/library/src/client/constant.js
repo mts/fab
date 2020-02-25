@@ -10,5 +10,6 @@ export const defaultBreed = Object.freeze({
 })
 
 export const httpResponseCode = Object.freeze({
+  success: 200,
   notFound: 404,
 })

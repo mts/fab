@@ -15,7 +15,7 @@ export const setAppCompleteStateThunk = () => async dispatch => {
   dispatch(
     apiRestDogSetRandomImageAction({
       message: dogImageUrl,
-      breed: defaultBreed.dog,
+      breed: dogImageUrl === placeholderURL ? defaultBreed.unknown : defaultBreed.dog,
     }),
   )
 
@@ -27,7 +27,7 @@ export const setAppCompleteStateThunk = () => async dispatch => {
   dispatch(
     apiRestCatSetRandomImageAction({
       message: catImageUrl,
-      breed: defaultBreed.cat,
+      breed: dogImageUrl === placeholderURL ? defaultBreed.unknown : defaultBreed.cat,
     }),
   )
 

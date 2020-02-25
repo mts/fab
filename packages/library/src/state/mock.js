@@ -1,4 +1,4 @@
-import { placeholderURL } from '../client/constant'
+import { dogRandomImage, catRandomImage } from '../../../client/src/pattern/atom/Image/__tests__/Image.int.render'
 
 export const mockAppState = {
   context: {
@@ -10,14 +10,16 @@ export const mockAppState = {
     rest: {
       dog: {
         randomImage: {
-          src: placeholderURL,
-          alt: 'random',
+          src: dogRandomImage.src,
+          alt: dogRandomImage.alt,
+          breed: dogRandomImage.breed,
         },
       },
       cat: {
         randomImage: {
-          src: placeholderURL,
-          alt: 'random',
+          src: catRandomImage.src,
+          alt: catRandomImage.alt,
+          breed: catRandomImage.breed,
         },
       },
     },

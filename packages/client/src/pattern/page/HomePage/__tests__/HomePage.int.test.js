@@ -2,7 +2,7 @@ import React from 'react'
 import { asyncRender, defaultRender } from './HomePage.int.render'
 
 jest.mock('react-router-dom', () => ({ Link: () => <div>some link</div> }))
-jest.mock('../../../../store/thunk/completeState', () => ({ setAppCompleteStateThunk: () => {} }))
+jest.mock('../../../../store/thunk/setRandomImage', () => ({ setDogRandomImageThunk: () => {}, setCatRandomImageThunk: () => {} }))
 
 describe('<HomePage />', () => {
   afterEach(() => jest.clearAllMocks())

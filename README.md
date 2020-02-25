@@ -137,24 +137,31 @@
     <details>
       <summary style="color: #006400;">Install</summary>
       <blockquote style="margin: 0; padding: 0 24px">
-        <strong>Run </strong><kbd>rm -rf node_modules package-lock.json && npm install</kbd> for<br>
-        <kbd>repository root</kbd>, <kbd>packages/http-server folder</kbd> and <kbd>packages/client folder</kbd><br>
-        to remove node_modules directory, package-lock.json file and install all packages from scratch
+        Run <kbd>rm -rf node_modules package-lock.json && npm install</kbd><br>
+        in the following directories to remove existing node_modules directories, package-lock.json files<br>
+        and install all dependencies from scratch:<br>
+        <ul>
+          <li><kbd>1. repository root</kbd></li>
+          <li><kbd>2. packages/client</kbd></li>
+        </ul>
       </blockquote>
     </details>
     <details>
       <summary style="color: #006400;">Bootstrap</summary>
       <blockquote style="margin: 0; padding: 0 24px">
-        <strong>Run </strong><kbd>npm run bootstrap</kbd>
+        Run <kbd>npm run bootstrap</kbd> in repository root
         to run linting, formatting, testing and building sequentially
       </blockquote>
     </details>
     <details>
       <summary style="color: #006400;">Start</summary>
       <blockquote style="margin: 0; padding: 0 24px">
-        <strong>Run </strong><kbd>npm start</kbd> in 1st terminal in packages/http-server folder to start up http-server<br>
-        <strong>Run </strong><kbd>npm start</kbd> in 2nd terminal in packages/client to start up webpack-dev-server<br>
-        <strong>Run </strong><kbd>npm run test -- --watch --onlyChanged --verbose</kbd> in 3rd terminal to let Jest watch changed tests<br>
+        Run <kbd>npm run start-storybook</kbd> in 1st terminal in repository root to start up Storybook UI Component Explorer<br>
+        Navigate in browser to <kbd>http://localhost:3003/</kbd><br>
+        Run <kbd>npm t</kbd> in 2nd terminal in repository root to let Jest run all test suites and check out code coverage report<br>
+        Run <kbd>npm run test -- --watch --onlyChanged --verbose</kbd> in 2nd terminal in repository root to let Jest watch changed tests<br>
+        Run <kbd>npm start</kbd> in 3rd terminal in packages/client to start up webpack-dev-server<br>
+        Navigate in browser to <kbd>http://localhost:8080/</kbd><br>
       </blockquote>
     </details>
     <details>
@@ -1021,16 +1028,11 @@
   <blockquote style="margin: 0; padding: 0 24px">
     <ul>
       <li><strong>Running </strong>locally at <a style="color: #006400;" href="http://localhost:8080/">http://localhost:8080/</a></li>
-      <li><strong>Deployed </strong>to Github Pages and running at <a style="color: #006400;" href="https://mts.github.io/mts">https://mts.github.io/mts</a></li>
+      <li><strong>Deployed </strong>to Github Pages and running at <a style="color: #006400;" href="https://mts.github.io/fab">https://mts.github.io/fab</a></li>
       <li><strong>Github Pages Cache Repair:</strong>
         <ul>
           <li><strong>Remove cache: </strong><kbd>rm -rf node_modules/gh-pages/.cache</kbd></li>
           <li><strong>Change </strong><kbd>https://github.com/mts/fab.git</kbd> to <kbd>git@github.com:mts/fab.git</kbd> in <kbd>.git/config</kbd></li>
-        </ul>
-      </li>
-      <li><strong>Localhost free server port:</strong>
-        <ul>
-          <li><strong>Free port 3000: </strong><kbd>kill $(lsof -t -i :3000)</kbd></li>
         </ul>
       </li>
     </ul>

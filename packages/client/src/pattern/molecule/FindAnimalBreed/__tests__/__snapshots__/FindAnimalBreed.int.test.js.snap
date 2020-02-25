@@ -6,10 +6,11 @@ exports[`<FindAnimalBreed /> Snaphot must match findCatBreedRender 1`] = `
 >
   <h2>
     A random image of 
+    beng
      breed
   </h2>
   <h4>
-    Type in new breed, press enter or click search
+    Type in new breed then press enter or click search button
   </h4>
   <div
     className="breedSearch"
@@ -17,6 +18,7 @@ exports[`<FindAnimalBreed /> Snaphot must match findCatBreedRender 1`] = `
     <input
       className="input"
       onKeyUp={[Function]}
+      placeholder="beng"
     />
     <button
       className="button"
@@ -47,10 +49,11 @@ exports[`<FindAnimalBreed /> Snaphot must match findDogBreedRender 1`] = `
 >
   <h2>
     A random image of 
+    collie
      breed
   </h2>
   <h4>
-    Type in new breed, press enter or click search
+    Type in new breed then press enter or click search button
   </h4>
   <div
     className="breedSearch"
@@ -58,6 +61,7 @@ exports[`<FindAnimalBreed /> Snaphot must match findDogBreedRender 1`] = `
     <input
       className="input"
       onKeyUp={[Function]}
+      placeholder="collie"
     />
     <button
       className="button"

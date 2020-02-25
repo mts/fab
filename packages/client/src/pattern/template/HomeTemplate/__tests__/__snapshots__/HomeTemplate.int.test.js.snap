@@ -9,10 +9,11 @@ exports[`<HomeTemplate /> Snaphot must match defaultRender 1`] = `
   >
     <h2>
       A random image of 
+      collie
        breed
     </h2>
     <h4>
-      Type in new breed, press enter or click search
+      Type in new breed then press enter or click search button
     </h4>
     <div
       className="breedSearch"
@@ -20,6 +21,7 @@ exports[`<HomeTemplate /> Snaphot must match defaultRender 1`] = `
       <input
         className="input"
         onKeyUp={[Function]}
+        placeholder="collie"
       />
       <button
         className="button"
@@ -36,8 +38,8 @@ exports[`<HomeTemplate /> Snaphot must match defaultRender 1`] = `
         className="image"
       >
         <img
-          alt="random"
-          src="https://via.placeholder.com/300"
+          alt="collie"
+          src="https://images.dog.ceo/breeds/collie-border/n02106166_1031.jpg"
         />
       </div>
     </div>
@@ -47,10 +49,11 @@ exports[`<HomeTemplate /> Snaphot must match defaultRender 1`] = `
   >
     <h2>
       A random image of 
+      beng
        breed
     </h2>
     <h4>
-      Type in new breed, press enter or click search
+      Type in new breed then press enter or click search button
     </h4>
     <div
       className="breedSearch"
@@ -58,6 +61,7 @@ exports[`<HomeTemplate /> Snaphot must match defaultRender 1`] = `
       <input
         className="input"
         onKeyUp={[Function]}
+        placeholder="beng"
       />
       <button
         className="button"
@@ -74,8 +78,8 @@ exports[`<HomeTemplate /> Snaphot must match defaultRender 1`] = `
         className="image"
       >
         <img
-          alt="random"
-          src="https://via.placeholder.com/300"
+          alt="beng"
+          src="https://66.media.tumblr.com/tumblr_m4iejdP8Hb1qd477zo1_250.jpg"
         />
       </div>
     </div>

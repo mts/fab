@@ -15,19 +15,19 @@ export const setAppCompleteStateThunk = () => async dispatch => {
   dispatch(
     apiRestDogSetRandomImageAction({
       message: dogImageUrl,
-      breed: defaultBreed.dog,
+      breed: dogImageUrl === placeholderURL ? defaultBreed.unknown : defaultBreed.dog,
     }),
   )
 
   dispatch(apiRestDogSetSearchBreedAction(defaultBreed.dog))
 
   const restCatAPIResponseData = await getRandomCatImageByBreed(defaultBreed.cat)
-  const catImageUrl = restCatAPIResponseData === [] ? placeholderURL : restCatAPIResponseData[0].url
+  const catImageUrl = !restCatAPIResponseData[0] ? placeholderURL : restCatAPIResponseData[0].url
 
   dispatch(
     apiRestCatSetRandomImageAction({
       message: catImageUrl,
-      breed: defaultBreed.cat,
+      breed: dogImageUrl === placeholderURL ? defaultBreed.unknown : defaultBreed.cat,
     }),
   )
 

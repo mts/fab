@@ -4,8 +4,6 @@ import { bindActionCreators } from 'redux'
 import * as actionCreators from '../../../store/action/actionCreators'
 import { findCatBreedDefaultProps, findCatBreedPropTypes } from './FindCatBreed.prop'
 import { FindAnimalBreed } from '../../molecule/FindAnimalBreed'
-import { catSelectOptions } from '../../atom/Select/__tests__/Select.int.render'
-import { breedEntry } from '../../../../../library/src/client/constant'
 import { clientAppStore } from '../../../store/client'
 import { setCatRandomImageThunk } from '../../../store/thunk/setRandomImage'
 
@@ -20,8 +18,6 @@ export function Component({ randomImage, searchBreed, apiRestCatSetSearchBreedAc
 
   return (
     <FindAnimalBreed
-      searchEntry={breedEntry.input}
-      selectOptions={catSelectOptions}
       buttonText="Search Cat"
       randomImage={randomImage}
       setRandomImage={setRandomImage}

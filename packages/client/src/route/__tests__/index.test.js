@@ -21,7 +21,7 @@ const mockRequirePath = () => {
   return require(pathPath)
 }
 
-jest.mock('../../store/thunk/completeState', () => ({ setAppCompleteStateThunk: () => {} }))
+jest.mock('../../store/thunk/setRandomImage', () => ({ setDogRandomImageThunk: () => {}, setCatRandomImageThunk: () => {} }))
 
 describe('index', () => {
   const path = mockRequirePath()

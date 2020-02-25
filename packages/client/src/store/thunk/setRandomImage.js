@@ -1,7 +1,7 @@
 import { apiRestDogSetRandomImageAction, apiRestCatSetRandomImageAction } from '../action/actionCreators'
 import { getRandomDogImageByBreed } from '../../api/rest/dog/image'
 import { getRandomCatImageByBreed } from '../../api/rest/cat/image'
-import { placeholderURL, httpResponseCode } from '../../../../library/src/client/constant'
+import { placeholderURL, defaultBreed, httpResponseCode } from '../../../../library/src/client/constant'
 
 export const setDogRandomImageThunk = breed => async dispatch => {
   const restDogAPIResponseData = await getRandomDogImageByBreed(breed)
@@ -10,7 +10,7 @@ export const setDogRandomImageThunk = breed => async dispatch => {
   dispatch(
     apiRestDogSetRandomImageAction({
       message: dogImageUrl,
-      breed: dogImageUrl === placeholderURL ? 'Unknown' : breed,
+      breed: dogImageUrl === placeholderURL ? defaultBreed.unknown : breed,
     }),
   )
 }
@@ -22,7 +22,7 @@ export const setCatRandomImageThunk = breed => async dispatch => {
   dispatch(
     apiRestCatSetRandomImageAction({
       message: catImageUrl,
-      breed: catImageUrl === placeholderURL ? 'Unknown' : breed,
+      breed: catImageUrl === placeholderURL ? defaultBreed.unknown : breed,
     }),
   )
 }

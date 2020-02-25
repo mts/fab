@@ -29,7 +29,7 @@ describe('setRandomImage', () => {
   afterEach(() => jest.clearAllMocks())
 
   describe('setDogRandomImageThunk()', () => {
-    test('must dispatch action response data when http response success ~ 200', async () => {
+    test('must dispatch action when http response success ~ 200', async () => {
       const responseSuccessDataObject = { code: constantMockObject.httpResponseCode.success, message: 'some-message' }
       const apiRestDogSetRandomImageActionSuccessDataObject = { message: responseSuccessDataObject.message, breed }
       const getRandomDogImageByBreedMockFn = jest.fn(() => Promise.resolve(responseSuccessDataObject))
@@ -44,7 +44,7 @@ describe('setRandomImage', () => {
       await expect(dispatchSpy).toHaveBeenCalledWith(actionDataObject)
     })
 
-    test('must dispatch action response data when http response not found ~ 404', async () => {
+    test('must dispatch action when http response not found ~ 404', async () => {
       const responseNotFoundDataObject = { code: constantMockObject.httpResponseCode.notFound, message: 'some-message' }
       const apiRestDogSetRandomImageActionNotFoundDataObject = {
         message: constantMockObject.placeholderURL,
@@ -64,7 +64,7 @@ describe('setRandomImage', () => {
   })
 
   describe('setCatRandomImageThunk()', () => {
-    test('must dispatch action response data when http response success ~ 200', async () => {
+    test('must dispatch action when http response success ~ 200', async () => {
       const responseSuccessDataObject = [{ url: 'some-url' }]
       const apiRestCatSetRandomImageActionSuccessDataObject = { message: responseSuccessDataObject[0].url, breed }
       const getRandomCatImageByBreedMockFn = jest.fn(() => Promise.resolve(responseSuccessDataObject))
@@ -79,7 +79,7 @@ describe('setRandomImage', () => {
       await expect(dispatchSpy).toHaveBeenCalledWith(actionDataObject)
     })
 
-    test('must dispatch action response data when http response not found ~ 404', async () => {
+    test('must dispatch action when http response not found ~ 404', async () => {
       const responseNotFoundDataObject = []
       const apiRestCatSetRandomImageActionNotFoundDataObject = {
         message: constantMockObject.placeholderURL,

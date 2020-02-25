@@ -12,7 +12,7 @@ exports[`<HomeTemplate /> Snaphot must match defaultRender 1`] = `
        breed
     </h2>
     <h4>
-      Type in new breed, press enter or click search
+      Type in new breed then press enter or click search button
     </h4>
     <div
       className="breedSearch"
@@ -50,7 +50,7 @@ exports[`<HomeTemplate /> Snaphot must match defaultRender 1`] = `
        breed
     </h2>
     <h4>
-      Type in new breed, press enter or click search
+      Type in new breed then press enter or click search button
     </h4>
     <div
       className="breedSearch"

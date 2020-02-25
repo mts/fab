@@ -10,7 +10,7 @@ exports[`<FindAnimalBreed /> Snaphot must match findCatBreedRender 1`] = `
      breed
   </h2>
   <h4>
-    Type in new breed, press enter or click search
+    Type in new breed then press enter or click search button
   </h4>
   <div
     className="breedSearch"
@@ -53,7 +53,7 @@ exports[`<FindAnimalBreed /> Snaphot must match findDogBreedRender 1`] = `
      breed
   </h2>
   <h4>
-    Type in new breed, press enter or click search
+    Type in new breed then press enter or click search button
   </h4>
   <div
     className="breedSearch"

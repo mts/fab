@@ -1,9 +1,9 @@
 /*!
  * @project        FAB
- * @name           app-modern.5fb8.js
+ * @name           app-modern.edc1.js
  * @author         MTS
- * @build          Tue, Feb 25, 2020 12:14 AM ET
- * @release        916d71827b448555624a1cdcb6de070e4ab05d25 [master]
+ * @build          Tue, Feb 25, 2020 2:18 PM ET
+ * @release        2ab85cd38cdca28014fcd311a1ee01780c170160 [master]
  * @copyright      Copyright (c) 2020 FAB
  *
  */

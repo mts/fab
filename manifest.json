@@ -1,9 +1,9 @@
 {
-  "app.css": "/fab/app.5fb8.css",
-  "app.js": "/fab/app-modern.5fb8.js",
-  "app.css.map": "/fab/app.5fb8.css.map",
-  "app.js.map": "/fab/app-modern.5fb8.js.map",
-  "app-modern.5fb8.js.LICENSE.txt": "/fab/app-modern.5fb8.js.LICENSE.txt",
+  "app.css": "/fab/app.edc1.css",
+  "app.js": "/fab/app-modern.edc1.js",
+  "app.css.map": "/fab/app.edc1.css.map",
+  "app.js.map": "/fab/app-modern.edc1.js.map",
+  "app-modern.edc1.js.LICENSE.txt": "/fab/app-modern.edc1.js.LICENSE.txt",
   "fonts/index.scss": "/fab/fonts/roboto-v18-latin-regular.woff2",
   "index.html": "/fab/index.html"
 }

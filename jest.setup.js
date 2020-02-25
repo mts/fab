@@ -12,3 +12,5 @@ global.renderToJSON = component => renderer.create(component).toJSON()
 global.renderMount = component => mount(component)
 
 global.renderShallow = component => shallow(component)
+
+require('whatwg-fetch')
